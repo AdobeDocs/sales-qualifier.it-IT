@@ -3,8 +3,11 @@ title: Controlla la casella e-mail in uscita
 description: Scopri come rivedere le e-mail inviate da Sales Qualifier per tuo conto, incluse le risposte, nella casella E-mail in uscita.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
 workflow-type: tm+mt
 source-wordcount: 328
