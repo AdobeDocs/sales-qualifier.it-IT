@@ -1,0 +1,179 @@
+---
+title: Introduzione a Sales Qualifier
+description: Scopri come completare la configurazione dell’amministratore una tantum per Sales Qualifier, inclusi i gruppi di utenti e una connessione di gestione delle relazioni con i clienti, prima che il team inizi a utilizzare l’applicazione.
+feature: Agentic AI, Sales Insights, Account Journeys
+role: Admin
+TQID: 'https://experienceleague.adobe.com/-nfmFwZyZFUZhm-uQUjSyTvrORuqJgKSKnENWYtvubs'
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4bid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+workflow-type: tm+mt
+source-wordcount: 1054
+ht-degree: 0%
+
+---
+
+
+# Introduzione a Sales Qualifier
+
+Dopo che Adobe esegue il provisioning di Sales Qualifier per la tua organizzazione, un amministratore di sistema [!DNL Marketo] deve creare i gruppi di utenti richiesti e connettere Salesforce o Microsoft Dynamics 365.
+
+[Home page di Sales Qualifier](assets/homepage.png){width="800" zoomable="yes"}
+
+## Configurare i gruppi di utenti
+
+Due gruppi di utenti in Adobe Admin Console controllano l’accesso a Sales Qualifier. Crea entrambi i gruppi prima che gli utenti accedano.
+
+>[!PREREQUISITES]
+>
+>L’amministratore che crea i gruppi deve soddisfare entrambi i requisiti seguenti:
+>
+>* Essere amministratore organizzazione con accesso a **[!UICONTROL Admin Console]** dal commutatore di app Adobe.
+>* Essere assegnato al prodotto Adobe Experience Platform o essere amministratore di sistema. In caso contrario, Adobe Experience Platform non viene visualizzato nell’elenco dei prodotti.
+
+### Utenti Sales Qualifier
+
+Gli utenti devono appartenere al gruppo di utenti `Sales Qualifier` per accedere all&#39;applicazione.
+
+1. Dal commutatore app a nove punti, seleziona **[!UICONTROL Admin Console]**.
+1. Seleziona **[!UICONTROL Utenti]** > **[!UICONTROL Gruppi di utenti]** > **[!UICONTROL Nuovo gruppo di utenti]**.
+1. Immetti `Sales Qualifier` per il nome del gruppo e seleziona **[!UICONTROL Salva]**.
+1. Apri **[!UICONTROL Profili di prodotto assegnati]** e seleziona **[!UICONTROL Assegna profilo]**.
+1. Seleziona **[!UICONTROL Adobe Experience Platform]**.
+1. Seleziona il profilo di prodotto **[!UICONTROL Accesso predefinito a tutti i prodotti]**, seleziona **[!UICONTROL Applica]**, quindi seleziona **[!UICONTROL Salva]**.
+1. Apri **[!UICONTROL Utenti]** e seleziona **[!UICONTROL Aggiungi utenti]** per aggiungere tutti coloro che hanno bisogno di accedere a Sales Qualifier.
+
+### Amministratori Sales Qualifier
+
+Gli amministratori che configurano le connessioni CRM, il [Centro informazioni](knowledge-center.md) e le impostazioni di rinuncia e-mail globali devono appartenere anche al gruppo di utenti `Sales Qualifier Admins`.
+
+1. In Adobe Admin Console, selezionare **[!UICONTROL Utenti]** > **[!UICONTROL Gruppi di utenti]** > **[!UICONTROL Nuovo gruppo di utenti]**.
+1. Immetti `Sales Qualifier Admins` per il nome del gruppo e seleziona **[!UICONTROL Salva]**.
+1. Apri **[!UICONTROL Utenti]**, seleziona **[!UICONTROL Aggiungi utenti]**, quindi aggiungi gli amministratori.
+1. Verificare che ogni amministratore sia anche membro del gruppo `Sales Qualifier`.
+
+L&#39;appartenenza a entrambi i gruppi rende **[!UICONTROL Impostazioni amministratore]** visibili in **[!UICONTROL Amministrazione]** nella barra di navigazione a sinistra. Gli utenti standard utilizzano i campi, i filtri e la playbook configurati dagli amministratori. Il piè di pagina di rinuncia configurato si applica automaticamente alle e-mail in uscita. Gli utenti standard non possono modificare queste impostazioni. Per informazioni dettagliate, consulta [Ruoli utente e autorizzazioni](user-roles-permissions.md).
+
+>[!NOTE]
+>
+>I nomi dei gruppi di utenti devono corrispondere esattamente come mostrato nei passaggi precedenti.
+
+È inoltre possibile creare un gruppo `Sales Qualifier BDR managers` facoltativo. I membri di questo gruppo possono accedere ai rapporti sulle prestazioni delle e-mail.
+
+## Connetti il tuo CRM
+
+Sales Qualifier si connette a Salesforce o Microsoft Dynamics 365 per fornire ai BDR una visualizzazione unificata di utenti, lead, contatti, account, opportunità, mapping dei proprietari e attività correlate. La connessione iniziale richiede l&#39;accesso in sola lettura a questi dati CRM. Prima di connettere Sales Qualifier, rivolgiti all’amministratore di CRM per preparare le credenziali. Consulta [Integrazioni](integrations.md) per i dettagli di integrazione.
+
+>[!PREREQUISITES]
+>
+>Per accedere all&#39;interfaccia di amministrazione di CRM, è necessario appartenere al gruppo Adobe Admin Console `Sales Qualifier Admins` e al gruppo `Sales Qualifier`.
+
+>[!BEGINTABS]
+
+>[!TAB Salesforce]
+
+Un amministratore di sistema Salesforce crea un’app client esterna (denominata anche app connessa) e ne configura l’utente Run-as.
+
+>[!PREREQUISITES]
+>
+>Conferma che l’amministratore di Salesforce disponga delle seguenti autorizzazioni:
+>
+>* Personalizza applicazione
+>* Visualizza configurazione e configurazione
+>* Modifica tutti i dati
+>* Gestione app collegate
+>
+>Senza _Gestisci app collegate_, l&#39;amministratore non può visualizzare l&#39;ID client e il segreto client.
+
+1. In Salesforce, vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Gestione app]** e seleziona **[!UICONTROL Nuova app connessa]** o **[!UICONTROL Nuova app client esterna]**.
+1. Immettere il nome di un&#39;applicazione e l&#39;indirizzo e-mail del contatto amministrativo.
+1. Abilita OAuth e immetti un URL di callback.
+
+   Se la connessione non utilizza un reindirizzamento, immetti un URL valido.
+
+1. Aggiungi i seguenti ambiti OAuth:
+
+   * Accedi al servizio URL identità (`id`, `profile`, `email`, `address`, `phone`)
+   * Gestisci dati utente tramite API (`api`)
+   * Accedi a identificatori utente univoci (`openid`)
+
+1. Abilitare il flusso di credenziali client e selezionare un utente **[!UICONTROL Esegui come]**.
+1. Verificare che l&#39;utente RunAs disponga dell&#39;accesso **Read** a `Leads`, `Accounts`, `Contacts`, `Tasks`, `Events`, `Opportunity`, `OpportunityContactRoles` e `OpportunityLineItems`. Verificare inoltre che **Attività di accesso** sia abilitato.
+1. Salva l’applicazione.
+1. Da **[!UICONTROL App Manager]**, apri l&#39;applicazione e seleziona **[!UICONTROL Visualizza]** > **[!UICONTROL Dettagli consumatore]**.
+1. Copia i seguenti valori per la connessione Sales Qualifier:
+
+   * Chiave consumer (ID client)
+   * Segreto consumer (segreto client)
+   * URL di callback
+   * URL istanza Salesforce
+
+>[!IMPORTANT]
+>
+>Non inviare i segreti del cliente tramite e-mail. Utilizza il canale sicuro approvato della tua organizzazione per condividere le credenziali con chi le immette in Sales Qualifier.
+
+### Trovare l’URL dell’istanza di Salesforce
+
+1. Accedi e annota il sottodominio _Dominio personale_ dell&#39;organizzazione dalla barra degli indirizzi del browser (il valore `{{mydomain}}`).
+1. Utilizzare il modulo canonico per Sales Qualifier: `https://{{mydomain}}.my.salesforce.com`.
+
+Non utilizzare un URL `lightning.force.com` come URL dell&#39;istanza.
+
+>[!TIP]
+>
+>Se l&#39;interfaccia delle connessioni CRM segnala ambiti mancanti, controllare il profilo dell&#39;utente RunAs in **[!UICONTROL Autorizzazioni oggetto standard]** per l&#39;accesso **Lettura** a lead, contatti, account e opportunità. Controlla anche **[!UICONTROL Impostazioni oggetto]** in ogni set di autorizzazioni assegnato.
+
+>[!TAB Microsoft Dynamics 365]
+
+Un amministratore Microsoft Dynamics 365 o Azure registra un’applicazione e la aggiunge all’ambiente Dynamics.
+
+1. In Microsoft Entra ID, seleziona **[!UICONTROL Registrazioni app]** e registra un&#39;applicazione.
+1. Copia l’ID client e l’ID tenant e crea un segreto client.
+1. Nel **[!UICONTROL centro di amministrazione di Power Platform]**, selezionare **[!UICONTROL Ambienti]** e aprire l&#39;ambiente Dynamics.
+1. Vai a **[!UICONTROL Impostazioni]** > **[!UICONTROL Utenti + autorizzazioni]** > **[!UICONTROL Utenti dell&#39;applicazione]** e seleziona **[!UICONTROL Nuovo utente dell&#39;app]**.
+1. Selezionare l&#39;applicazione Microsoft Entra registrata.
+1. Assegna un ruolo di sicurezza che consenta l&#39;accesso in lettura a lead, contatti, account, opportunità e attività.
+
+   È necessario un ruolo di sicurezza. Senza un accesso, l’applicazione non può accedere ai dati di Dynamics.
+
+1. Raccogli l’ID client, il segreto client, l’ID tenant e l’URL dell’istanza di Dynamics. Utilizzare il modulo URL canonico `https://{{mydomain}}.crm.dynamics.com`.
+
+>[!ENDTABS]
+
+### Inserisci la connessione
+
+1. Come membro di entrambi i gruppi Sales Qualifier richiesti, accedi a Sales Qualifier e conferma che sia selezionato l’ambiente o la sandbox corretta.
+1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]** e seleziona **[!UICONTROL Impostazioni amministratore]**.
+1. Seleziona **[!UICONTROL connessioni CRM]** in **[!UICONTROL Integrazioni]**.
+
+   Nelle versioni precedenti dell&#39;interfaccia questa area potrebbe essere visualizzata come **[!UICONTROL Integrazioni]** in **[!UICONTROL Amministrazione]**.
+
+   Nella pagina sono visualizzate le schede per Salesforce e Microsoft Dynamics. Una connessione inattiva mostra **[!UICONTROL Connessione]**. Una connessione configurata mostra **[!UICONTROL Connesso]** e **[!UICONTROL Gestisci]**.
+
+1. Seleziona **[!UICONTROL Connetti]** per il sistema di gestione delle relazioni con i clienti utilizzato.
+1. Immetti le credenziali e l’URL dell’istanza dall’amministratore del sistema di gestione delle relazioni con i clienti.
+1. Dopo una connessione riuscita, verificare che nella scheda sia visualizzato **[!UICONTROL Connesso]**.
+
+### Importa campi CRM
+
+Dopo aver connesso il CRM, configura il mapping in entrata per scegliere quali campi CRM visualizzare in Sales Qualifier.
+
+1. Sulla scheda CRM connessa, selezionare **[!UICONTROL Gestisci]** per aprire **[!UICONTROL Mappatura in entrata]**.
+1. Selezionare **[!UICONTROL Aggiungi sezione]**.
+1. Immettere un nome e una descrizione per la sezione.
+1. Selezionare il tipo di entità. **[!UICONTROL Prospect]** è selezionato per impostazione predefinita. Sono inoltre disponibili **[!UICONTROL Contatti]**, **[!UICONTROL Account]** e **[!UICONTROL Opportunità]**.
+1. Seleziona i campi CRM da importare.
+1. Visualizzare l&#39;anteprima della sezione e selezionare **[!UICONTROL Aggiungi]**.
+
+I campi prospect vengono visualizzati nella scheda **[!UICONTROL Persona]**, i campi account nella scheda **[!UICONTROL Account]** e i campi opportunità nella sezione **[!UICONTROL Opportunità account]**. Attiva **[!UICONTROL Filterable]** per ogni campo mappato di cui i rappresentanti hanno bisogno come filtro.
+
+Consulta [Integrazioni](integrations.md#map-crm-fields-inbound-mapping) per gestire la mappatura e la sincronizzazione dei campi.
+
+## Passaggi successivi
+
+>[!MORELIKETHIS]
+>
+>* [Potenziali clienti](prospects.md)
+>* [Flussi di lavoro in uscita](outbound-workflows.md)
+>* [Ruoli utente e autorizzazioni](user-roles-permissions.md)
