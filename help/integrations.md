@@ -3,19 +3,13 @@ title: Gestire le integrazioni
 description: Scopri come connettere Outlook, gestire le connessioni CRM, mappare i campi in entrata, sincronizzare le attività e configurare la rinuncia e-mail globale in Sales Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User, Admin
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4bid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
 workflow-type: tm+mt
-source-wordcount: 1412
-ht-degree: 0%
+source-wordcount: 1379
+ht-degree: 1%
 
 ---
 
@@ -96,6 +90,8 @@ Una scheda non configurata mostra **[!UICONTROL Connetti]**. Una scheda configur
 
    Immetti **[!UICONTROL ID client (chiave consumer)]**, **[!UICONTROL URL istanza]** e **[!UICONTROL Segreto client]**. Utilizzare il modulo URL dell&#39;istanza canonica `https://{{mydomain}}.my.salesforce.com`.
 
+   ![Connessione Salesforce](assets/crm-conn-salesforce.png){width="800" zoomable="yes"}
+
    >[!TAB Microsoft Dynamics]
 
    Immetti **[!UICONTROL ID client (chiave consumer)]**, **[!UICONTROL ID tenant]**, **[!UICONTROL URL istanza Microsoft Dynamics]** e **[!UICONTROL Segreto client]**. Utilizzare il modulo URL dell&#39;istanza canonica `https://{{mydomain}}.crm.dynamics.com`.
@@ -117,7 +113,7 @@ Se Sales Qualifier rifiuta le credenziali, identifica la causa, ad esempio crede
 
 >[!WARNING]
 >
->Quando si disconnette un CRM, i piani di coinvolgimento vengono messi in pausa per tutti i potenziali clienti dell&#39;organizzazione e non viene eseguita alcuna sincronizzazione di nuovi potenziali clienti dal CRM fino alla riconnessione.
+>Quando si disconnette un CRM, i flussi di lavoro in uscita vengono sospesi per tutti i potenziali clienti dell&#39;organizzazione e nessun nuovo potenziale viene sincronizzato dal CRM fino alla riconnessione.
 
 ## Mappa campi CRM (mappatura in entrata) {#map-crm-fields-inbound-mapping}
 
@@ -148,7 +144,7 @@ Per modificare una sezione in un secondo momento, selezionare **[!UICONTROL Modi
 
 ## Configurare la sincronizzazione delle attività (mappatura in uscita) {#configure-activity-sync-outbound-mapping}
 
-Sincronizzazione attività scrive le attività di Sales Qualifier outreach nel CRM e nel Marketo. Le attività di invio, apertura, clic e risposta di e-mail includono il nome del piano di coinvolgimento. I rappresentanti possono visualizzare le attività nella gestione delle relazioni con i clienti, mentre i team di marketing possono utilizzare le attività di Marketo nelle timeline di lead scoring e coinvolgimento.
+Sincronizzazione attività scrive le attività di Sales Qualifier outreach nel CRM e nel Marketo. Le attività di invio, apertura, clic e risposta dei messaggi e-mail includono il nome del flusso di lavoro in uscita. I rappresentanti possono visualizzare le attività nella gestione delle relazioni con i clienti, mentre i team di marketing possono utilizzare le attività di Marketo nelle timeline di lead scoring e coinvolgimento.
 
 1. Sulla scheda CRM connessa, selezionare **[!UICONTROL Gestione]**.
 1. Apri la scheda **[!UICONTROL Mapping in uscita]**.
@@ -160,20 +156,13 @@ Quando la sincronizzazione delle attività è disattivata, Sales Qualifier conti
 >
 >La sincronizzazione delle attività richiede l’accesso in scrittura nel CRM. Se manca l&#39;autorizzazione richiesta, lo switch è disabilitato e Sales Qualifier richiede di contattare l&#39;amministratore. Per concedere l’accesso in scrittura all’attività, rivolgiti al tuo amministratore CRM.
 
-## Attiva filtro coinvolgimento Marketo {#turn-on-marketo-engagement-filtering}
+## Configurare gli elementi di rilievo del marketing {#turn-on-marketo-engagement-filtering}
 
-Il filtro del coinvolgimento di Marketo consente ai rappresentanti di trovare e assegnare la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio aperture di e-mail e clic. Vedi [Filtra per coinvolgimento Marketo](prospects.md#filter-by-marketo-engagement).
+Marketing Highlights consente ai rappresentanti di trovare e assegnare la priorità ai potenziali clienti in base al loro coinvolgimento live [!DNL Marketo], ad esempio aperture di e-mail e clic. Vedi [Filtra per coinvolgimento Marketo](prospects.md#filter-by-marketo-engagement).
 
-Un amministratore attiva il filtro del coinvolgimento Marketo per l’organizzazione e la sandbox pertinenti. Dopo l&#39;attivazione, un addetto marketing completa una configurazione una tantum in [!DNL Marketo].
+Un amministratore completa una configurazione una tantum che connette [!DNL Marketo] a Sales Qualifier per l&#39;organizzazione e la sandbox pertinenti. La configurazione prevede la creazione di credenziali API in Adobe Developer Console, la configurazione di un webhook in [!DNL Marketo] e l&#39;aggiunta di tale webhook a una campagna avanzata di attivazione. Per i passaggi completi, consulta [Imposta elementi di rilievo marketing](marketing-highlights-setup.md).
 
-Per eseguire il flusso dell’attività di una campagna avanzata in Sales Qualifier:
-
-1. In [!DNL Marketo], apri la campagna avanzata di cui desideri eseguire il flusso dell&#39;attività in Sales Qualifier.
-1. Aggiungi un passaggio del webhook di chiamata al flusso di Smart Campaign.
-
-Una volta impostato il passaggio del webhook, l’attività da tale campagna avanzata scorre in Sales Qualifier e i rappresentanti possono filtrare i potenziali clienti in base a esso.
-
-Il filtro del coinvolgimento Marketo è disponibile in tutte le aree di produzione: Nord America, EMEA e Australia.
+Marketing Highlights è disponibile in tutte le aree di produzione: Nord America, EMEA e Australia.
 
 ## Configurare la rinuncia e-mail globale {#configure-global-email-opt-out}
 

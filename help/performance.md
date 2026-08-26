@@ -4,9 +4,8 @@ description: Scopri come rivedere i rapporti Prestazioni organizzazione e Presta
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/ofBw7JHKkkQaPOeUZ6rreLDAhAfineLveBeVYK-CerQ'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
 workflow-type: tm+mt
 source-wordcount: 321
 ht-degree: 0%
@@ -59,7 +58,7 @@ La scheda **[!UICONTROL Attività]** riporta l&#39;estensione manuale:
 
 ## Prestazioni della campagna
 
-**[!UICONTROL Prestazioni campagna]** segnala i risultati in uscita per campagna del piano di coinvolgimento:
+**[!UICONTROL Prestazioni campagna]** segnala i risultati in uscita per campagna flusso di lavoro in uscita:
 
 * **Tessere KPI**: prospettive attive, tasso di apertura, tasso clic, tasso di risposta e riunioni prenotate.
 * **Grafico di tendenza delle metriche della campagna**: KPI della campagna nel periodo di tempo selezionato.
