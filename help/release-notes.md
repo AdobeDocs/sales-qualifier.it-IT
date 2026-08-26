@@ -3,17 +3,16 @@ title: Note sulla versione di Sales Qualifier
 description: Scopri le novità in Qualificatore di vendita.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
-source-git-commit: 1fb149668518a8f6e3d47f60ec962b13554121f1
+source-git-commit: 351b27d35049b0bb576e9b84f7fd6fada791bb52
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 12%
 
 ---
 
-
 # Note sulla versione di Sales Qualifier
 
-**08-17-2026**
+## 08-17-2026
 
 [!DNL Sales Qualifier] è ora disponibile come applicazione autonoma. È stato inizialmente rilasciato come parte di Adobe Journey Optimizer B2B.
 

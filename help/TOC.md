@@ -1,10 +1,10 @@
 ---
 user-guide-title: Qualificatore di vendita
 user-guide-description: Scopri come utilizzare Sales Qualifier per automatizzare la qualificazione dei potenziali clienti, la sensibilizzazione e il coinvolgimento degli acquirenti per i team di vendita B2B.
-source-git-commit: 1fb149668518a8f6e3d47f60ec962b13554121f1
+source-git-commit: 7000e83d987e182ef60ceb5c75531b280c96cf22
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 30%
+source-wordcount: '54'
+ht-degree: 27%
 
 ---
 
@@ -26,4 +26,3 @@ ht-degree: 30%
 + [Ruoli utente e autorizzazioni](user-roles-permissions.md)
 + [Chat basata su IA](ai-assistant.md)
 + [Impostazioni di amministrazione](admin-settings.md)
-+ [Note sulla versione](release-notes.md)
