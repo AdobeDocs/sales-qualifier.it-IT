@@ -10,7 +10,7 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
 workflow-type: tm+mt
 source-wordcount: 632
 ht-degree: 0%
@@ -57,7 +57,7 @@ Il pannello **[!UICONTROL Panoramica account]** riepiloga l&#39;account in base 
 
 Utilizza i pulsanti sotto la panoramica per passare da una visualizzazione all’altra. Le visualizzazioni disponibili dipendono dal CRM e dalla configurazione:
 
-| Visualizza | Cosa mostra |
+| Visualizzazione | Cosa mostra |
 | --- | --- |
 | **[!UICONTROL Opportunità]** | Opportunità aperte collegate all’account, con campi chiave per ciascuna. Selezionare **[!UICONTROL Visualizza tutto]** per visualizzare l&#39;elenco completo in una tabella. I dettagli dell&#39;opportunità, quali l&#39;area di visualizzazione, il tipo e la data di chiusura, possono essere utilizzati anche per filtrare i contatti dell&#39;account in **[!UICONTROL Contatti opportunità personali]** quando un amministratore rende tali campi filtrabili. |
 | **[!UICONTROL Membri principali]** | Contatti principali coinvolti dell’account, classificati per coinvolgimento. Ogni contatto mostra la propria qualifica, l’indirizzo e-mail, il punteggio di coinvolgimento e l’indicatore di urgenza. |
@@ -67,7 +67,7 @@ Utilizza i pulsanti sotto la panoramica per passare da una visualizzazione all�
 
 Dalla visualizzazione **[!UICONTROL Membri principali]**, eseguire una delle azioni seguenti per un contatto:
 
-* **[!UICONTROL Aggiungi al piano di coinvolgimento]**—Iscrivi il contatto in un [piano di coinvolgimento](outbound-workflows.md).
+* **[!UICONTROL Aggiungi al flusso di lavoro in uscita]** - Registra il contatto in un [flusso di lavoro in uscita](outbound-workflows.md).
 * **[!UICONTROL Aggiungi a Marketo campaign]** - Attiva una campagna [!DNL Marketo] per il contatto.
 
 ## Ricercare l’account
@@ -86,7 +86,7 @@ L’intelligenza dell’account è più utile quando determina ciò che invii:
 
 * Fai riferimento a una notizia recente o a un segnale di ricerca per rendere l’apertura rilevante invece di utilizzare un pitch generico.
 * Controlla le opportunità aperte e il valore della pipeline per decidere se assegnare la priorità all’account.
-* Utilizza **[!UICONTROL Membri principali]** per identificare chi contattare, quindi iscriverli in un piano di coinvolgimento.
+* Utilizza **[!UICONTROL Membri principali]** per identificare chi contattare, quindi iscriverli in un flusso di lavoro in uscita.
 * Chiedi a [Chat AI](ai-assistant.md) di sviluppare il posizionamento per l&#39;account prima di una chiamata.
 
 >[!MORELIKETHIS]

@@ -12,7 +12,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
 workflow-type: tm+mt
 source-wordcount: 412
 ht-degree: 22%
@@ -29,7 +29,7 @@ I BDR possono utilizzare il browser e i plug-in e-mail per accedere alle informa
 ## Operazioni disponibili in Sales Qualifier
 
 * **Assegna priorità a potenziali clienti e account** con riepiloghi di attività generati dall&#39;intelligenza artificiale e assegnazione di priorità basata su segnali.
-* **Crea piani di coinvolgimento orientati agli obiettivi** in cui AI propone una cadenza e redige e-mail personalizzate per ogni potenziale cliente.
+* **Crea flussi di lavoro in uscita basati su obiettivi** in cui AI propone una cadenza e redige e-mail personalizzate per ogni potenziale cliente.
 * **Elabora l&#39;estensione in una coda** per le chiamate telefoniche, le e-mail LinkedIn e le revisioni e-mail.
 * **Prenota automaticamente le riunioni** collegando il calendario e inserendo un collegamento di prenotazione personale nella cadenza.
 * **Informa l&#39;impegno di IA con i tuoi materiali** creando un playbook nel Knowledge Center.

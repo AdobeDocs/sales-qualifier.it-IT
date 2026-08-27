@@ -10,7 +10,7 @@ feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
   - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
 internal-label: Administration
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
 workflow-type: tm+mt
 source-wordcount: 670
 ht-degree: 0%
@@ -48,7 +48,7 @@ Sales Qualifier legge gli utenti, i contatti, le mappature dei proprietari, i le
 
 ## Mappa campi CRM (mappatura in entrata)
 
-Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. La mappatura in entrata controlla quali campi di gestione delle relazioni con i clienti vengono estratti da Sales Qualifier nell’applicazione.
+Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. Il mapping in entrata controlla i campi CRM che il qualificatore vendite richiama nell&#39;applicazione.
 
 1. Selezionare **[!UICONTROL Aggiungi sezione]**.
 1. Immettere un nome e una descrizione per la sezione.
@@ -70,7 +70,7 @@ I campi mappati vengono visualizzati nelle aree corrispondenti di Sales Qualifie
 
 1. Da **[!UICONTROL connessioni CRM]**, selezionare **[!UICONTROL Gestisci]** per il CRM connesso.
 1. Apri **[!UICONTROL Mappatura in uscita]**.
-1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare le attività di Sales Qualifier Outreach con CRM e Marketo. Le attività di invio, apertura, clic e risposta di e-mail includono il nome del piano di coinvolgimento.
+1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare le attività di Sales Qualifier Outreach con CRM e Marketo. Le attività di invio, apertura, clic e risposta dei messaggi e-mail includono il nome del flusso di lavoro in uscita.
 
 Quando la sincronizzazione delle attività è disattivata, Sales Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di outreach con il sistema CRM o Marketo.
 

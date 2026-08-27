@@ -13,9 +13,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+source-git-commit: 351b27d35049b0bb576e9b84f7fd6fada791bb52
 workflow-type: tm+mt
-source-wordcount: 1897
+source-wordcount: 1923
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 # Flussi di lavoro in uscita
 
-Un piano di coinvolgimento è una cadenza di sensibilizzazione guidata dagli obiettivi. Puoi definire l’obiettivo e i criteri di targeting. L’intelligenza artificiale propone quindi una cadenza multi-touch e scrive contenuti e-mail personalizzati per ogni potenziale cliente. Prima di attivare la cadenza, rivedi e approva ogni e-mail.
+Un flusso di lavoro in uscita è una cadenza di estensione guidata da un obiettivo. Puoi definire l’obiettivo e i criteri di targeting. L’intelligenza artificiale propone quindi una cadenza multi-touch e scrive contenuti e-mail personalizzati per ogni potenziale cliente. Prima di attivare la cadenza, rivedi e approva ogni e-mail.
 
-Un piano di coinvolgimento collega quattro elementi:
+Un flusso di lavoro in uscita collega quattro elementi:
 
 * **Obiettivo**: il risultato desiderato dall&#39;estensione, ad esempio la prenotazione di una chiamata di individuazione o l&#39;aumento della registrazione dell&#39;evento.
 * **Filtri di targeting**—Condizioni che determinano quali potenziali clienti sono idonei.
@@ -38,24 +38,24 @@ L’intelligenza artificiale utilizza l’obiettivo di suggerire filtri di targe
 
 | Concetto | Descrizione |
 | --- | --- |
-| **Piano di coinvolgimento** | Un’attività in uscita riutilizzabile definita da un obiettivo, da filtri di targeting, cadenza e impostazioni. |
+| **Flusso di lavoro in uscita** | Un’attività in uscita riutilizzabile definita da un obiettivo, da filtri di targeting, cadenza e impostazioni. |
 | **Obiettivo** | Cosa dovrebbe fare la sensibilizzazione. |
 | **Punto di contatto** | Un passaggio nella cadenza (e-mail, chiamata telefonica o LinkedInMail), pianificato in relazione all’iscrizione. |
 | **Prompt punto di contatto** | Le istruzioni che l’IA segue durante la generazione di una riga dell’oggetto e del corpo dell’e-mail per un potenziale cliente, tra cui tono, lunghezza, focus e call to action. |
 | **Cadenza** | La sequenza completa dei punti di contatto: quanti, in quale ordine e in quali giorni. |
-| **Filtro di targeting** | Condizione che limita il piano di coinvolgimento a un sottoinsieme di potenziali clienti. |
+| **Filtro di targeting** | Condizione che limita il flusso di lavoro in uscita a un sottoinsieme di potenziali clienti. |
 | **Bozza** | Un’e-mail generata pronta per la revisione ma non ancora approvata. |
 | **Motivazione** | Spiegazione dell’intelligenza artificiale di come ha scritto una determinata e-mail, inclusi i segnali e le origini dati utilizzati. |
-| **Iscrizione** | Approvazione delle bozze di un potenziale cliente, che attiva la cadenza e le code di posta elettronica da inviare durante la finestra di invio del piano di coinvolgimento. |
+| **Iscrizione** | Approvazione delle bozze di un potenziale cliente, che attiva la cadenza e mette in coda le e-mail da inviare durante la finestra di invio del flusso di lavoro in uscita. |
 
-Le sezioni seguenti spiegano come creare un piano di coinvolgimento, esaminare le e-mail generate, approvare i potenziali clienti e gestire i flussi di lavoro in uscita.
+Le sezioni seguenti spiegano come creare un flusso di lavoro in uscita, esaminare le e-mail generate, approvare i potenziali clienti e gestire i flussi di lavoro in uscita.
 
-## Creare un piano di coinvolgimento
+## Creare un flusso di lavoro in uscita
 
-La procedura guidata del piano di coinvolgimento prevede cinque passaggi: **[!UICONTROL Obiettivo]**, **[!UICONTROL Targeting]**, **[!UICONTROL Generazione punti di contatto]**, **[!UICONTROL Impostazioni]** e **[!UICONTROL Aggiungi potenziali]**. L&#39;obiettivo determina i passaggi rimanenti.
+La procedura guidata Flusso di lavoro in uscita prevede cinque passaggi: **[!UICONTROL Obiettivo]**, **[!UICONTROL Targeting]**, **[!UICONTROL Generazione punti di contatto]**, **[!UICONTROL Impostazioni]** e **[!UICONTROL Aggiungi potenziali]**. L&#39;obiettivo determina i passaggi rimanenti.
 
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di lavoro in uscita]**.
-1. Nella scheda **[!UICONTROL Sfoglia]**, selezionare **[!UICONTROL + Crea piano di coinvolgimento]** nell&#39;angolo superiore destro.
+1. Nella scheda **[!UICONTROL Sfoglia]**, seleziona **[!UICONTROL + Crea flusso di lavoro in uscita]** nell&#39;angolo superiore destro.
 
 ### Passaggio 1: definire l’obiettivo
 
@@ -72,6 +72,8 @@ Indica un risultato specifico nell’obiettivo. Ad esempio, immettere `Book a 15
 
 I filtri di targeting definiscono quali potenziali clienti sono idonei. Quando si aggiungono i potenziali clienti in un secondo momento, nell&#39;elenco di selezione vengono visualizzati solo i potenziali clienti che corrispondono a questi filtri.
 
+![Filtri di destinazione](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
+
 1. Selezionare la freccia rivolta verso il basso per aprire l&#39;elenco **[!UICONTROL Aggiungi un filtro]**, quindi selezionare un filtro.
 
 1. Imposta i valori per il filtro.
@@ -83,7 +85,11 @@ I filtri di targeting definiscono quali potenziali clienti sono idonei. Quando s
 
 Dopo aver configurato il targeting, l’intelligenza artificiale analizza l’obiettivo e i criteri di targeting, definisce la cadenza e scrive un prompt per ogni punto di contatto. La cadenza può includere passaggi e-mail, telefonata e LinkedInMail.
 
+![Punti di contatto](assets/create-workflow-touchpoints.png){width="800" zoomable="yes"}
+
 Espandi un punto di contatto e-mail per leggerne il prompt. Il prompt guida l’intelligenza artificiale durante la scrittura dell’e-mail di ogni potenziale cliente, inclusi il tono, la lunghezza, lo stato attivo e call to action.
+
+Se si digita una barra `/`, viene visualizzato l&#39;elenco dei token definiti che è possibile utilizzare per personalizzare l&#39;e-mail.
 
 #### Rigenera la cadenza
 
@@ -105,21 +111,23 @@ Quando la cadenza e i prompt sono pronti, selezionare **[!UICONTROL Avanti: Impo
 
 Affina i prompt dei punti di contatto prima di generare le e-mail dei potenziali clienti. IA utilizza questi prompt per ogni prospect selezionato.
 
-### Passaggio 4: configurare le impostazioni del piano di coinvolgimento
+### Passaggio 4: configurare le impostazioni del flusso di lavoro in uscita
 
-Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene eseguito il piano di coinvolgimento.
+Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene eseguito il flusso di lavoro in uscita.
 
-1. Rivedere il nome del piano di coinvolgimento **&#x200B;**&#x200B;e modificarlo se necessario.
-1. In **[!UICONTROL Numero massimo di potenziali clienti per piano di coinvolgimento]**, confermare il numero massimo di potenziali clienti che il piano di coinvolgimento può gestire contemporaneamente.
+![Pannello impostazioni](assets/create-workflow-settings.png){width="800" zoomable="yes"}
+
+1. Rivedi il nome del flusso di lavoro in uscita **&#x200B;**&#x200B;e modificalo se necessario.
+1. In **[!UICONTROL Numero massimo di potenziali clienti per flusso di lavoro in uscita]**, confermare il numero massimo di potenziali clienti che il flusso di lavoro in uscita può gestire contemporaneamente.
 1. Imposta la **[!UICONTROL finestra di invio]** per le ore in cui le e-mail in uscita possono essere inviate.
 1. Seleziona i giorni della settimana in cui le e-mail possono essere inviate. Per evitare gli invii di fine settimana, seleziona solo i giorni della settimana invece di utilizzare un&#39;impostazione **[!UICONTROL Ignora fine settimana]** separata.
 1. Scegli se inviare durante le ore più attive di ogni prospect.
 1. Per interrompere automaticamente i punti di contatto di follow-up quando un prospect registra una riunione, attivare **[!UICONTROL Pausa prenotazione riunione]**.
-1. Scegli se utilizzare il fuso orario di ogni prospect o il piano di coinvolgimento **[!UICONTROL Fuso orario]** per la tempistica di invio. Se utilizzi il fuso orario del piano di coinvolgimento, verifica che corrisponda al pubblico.
-1. In **[!UICONTROL Autorizzazioni]**, mantieni **[!UICONTROL Privato]** (impostazione predefinita) o seleziona **[!UICONTROL Condiviso con tutti]**. Per ulteriori dettagli, vedere [Condividere un piano di coinvolgimento](#share-an-engagement-plan).
+1. Scegli se utilizzare il fuso orario di ogni prospect o il flusso di lavoro in uscita **[!UICONTROL Fuso orario]** per la tempistica di invio. Se utilizzi il fuso orario del flusso di lavoro in uscita, verifica che corrisponda al pubblico.
+1. In **[!UICONTROL Autorizzazioni]**, mantieni **[!UICONTROL Privato]** (impostazione predefinita) o seleziona **[!UICONTROL Condiviso con tutti]**. Per ulteriori dettagli, vedere [Condividere un flusso di lavoro in uscita](#share-an-outbound-workflow).
 1. Seleziona **[!UICONTROL Salva e aggiungi prospect]**.
 
-Il piè di pagina di rinuncia è configurato a livello globale da un amministratore e si applica alle e-mail in uscita indipendentemente dalle impostazioni del piano di coinvolgimento. Consulta [Configurare la rinuncia e-mail globale](integrations.md#configure-global-email-opt-out).
+Il piè di pagina di rinuncia è configurato a livello globale da un amministratore e si applica alle e-mail in uscita indipendentemente dalle impostazioni del flusso di lavoro in uscita. Consulta [Configurare la rinuncia e-mail globale](integrations.md#configure-global-email-opt-out).
 
 ### Passaggio 5: aggiungere potenziali clienti e avviare la generazione di e-mail
 
@@ -139,9 +147,9 @@ Per ogni potenziale cliente, l’intelligenza artificiale combina il prompt del 
 
 ## Rivedere e perfezionare le e-mail generate
 
-Al termine della generazione, la vista Dettaglio piano di coinvolgimento richiede di esaminare le bozze. Sales Qualifier invia l’e-mail solo dopo l’approvazione.
+Al termine della generazione, nella vista dei dettagli Flusso di lavoro in uscita viene richiesto di esaminare le bozze. Sales Qualifier invia l’e-mail solo dopo l’approvazione.
 
-1. Nella visualizzazione dei dettagli del piano di coinvolgimento, selezionare **[!UICONTROL Revisione bozze]** nel banner.
+1. Nella visualizzazione dei dettagli del flusso di lavoro in uscita, selezionare **[!UICONTROL Rivedi bozze]** nel banner.
 1. Il passaggio **[!UICONTROL Rivedi punti di contatto]** ha due schede:
    * **[!UICONTROL Pronto per la revisione]**: messaggi di posta elettronica che hanno completato la generazione.
    * **[!UICONTROL Generazione in corso]** - Messaggi di posta elettronica ancora in fase di scrittura.
@@ -184,17 +192,17 @@ L’approvazione attiva la cadenza per un potenziale cliente. Il sistema non inv
 1. Nell’elenco a sinistra dei potenziali clienti, seleziona i potenziali clienti di cui hai rivisto e-mail e che sei pronto a inviare.
 1. Seleziona **[!UICONTROL Approva e iscrivi prospect]** nell&#39;angolo inferiore destro.
 
-Le e-mail approvate vengono inviate in base ai giorni selezionati dal piano di coinvolgimento, alla finestra di invio, all’opzione ore attive e all’impostazione del fuso orario. Un punto di contatto con un ritardo pari a zero invia senza attesa; ogni punto di contatto segue il ritardo configurato. I potenziali clienti non approvati rimangono in **[!UICONTROL Pronti per la revisione]**.
+Le e-mail approvate vengono inviate in base ai giorni selezionati, alla finestra di invio, all’opzione ore attive e all’impostazione del fuso orario del flusso di lavoro in uscita. Un punto di contatto con un ritardo pari a zero invia senza attesa; ogni punto di contatto segue il ritardo configurato. I potenziali clienti non approvati rimangono in **[!UICONTROL Pronti per la revisione]**.
 
-## Condividere un piano di coinvolgimento
+## Condividere un flusso di lavoro in uscita
 
-Ogni piano di coinvolgimento ha un&#39;impostazione **[!UICONTROL Autorizzazioni]**. I flussi di lavoro in uscita sono **[!UICONTROL Privati]** per impostazione predefinita. Il proprietario può selezionare **[!UICONTROL Condiviso con tutti]** per rendere disponibile al team un piano di coinvolgimento.
+Ogni flusso di lavoro in uscita ha un&#39;impostazione **[!UICONTROL Autorizzazioni]**. I flussi di lavoro in uscita sono **[!UICONTROL Privati]** per impostazione predefinita. Il proprietario può selezionare **[!UICONTROL Condiviso con tutti]** per rendere disponibile al team un flusso di lavoro in uscita.
 
 >[!CAUTION]
 >
->La condivisione è permanente. Dopo aver impostato un piano di coinvolgimento su **[!UICONTROL Condiviso con tutti]**, non è possibile ripristinarlo su **[!UICONTROL Privato]**.
+>La condivisione è permanente. Dopo che un flusso di lavoro in uscita è impostato su **[!UICONTROL Condiviso con tutti]**, non può essere ripristinato su **[!UICONTROL Privato]**.
 
-In un piano di coinvolgimento condiviso, i team possono iscrivere i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del piano di coinvolgimento può modificare le impostazioni a livello di piano, tra cui la pianificazione, il fuso orario, la cadenza e altre impostazioni. Queste impostazioni sono di sola lettura per i colleghi.
+In un flusso di lavoro in uscita condiviso, i team possono registrare i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del flusso di lavoro in uscita può modificare le impostazioni a livello di piano, tra cui la pianificazione, il fuso orario, la cadenza e altre impostazioni. Queste impostazioni sono di sola lettura per i colleghi.
 
 Utilizza questi filtri per mantenere attivi i flussi di lavoro in uscita condivisi e i risultati:
 
@@ -203,14 +211,14 @@ Utilizza questi filtri per mantenere attivi i flussi di lavoro in uscita condivi
 
 ## Gestione delle risposte fuori sede
 
-Quando un potenziale cliente risponde con un messaggio fuori sede, il piano di coinvolgimento lo gestisce automaticamente.
+Quando un potenziale cliente risponde con un messaggio fuori sede, il flusso di lavoro in uscita lo gestisce automaticamente.
 
-* **Ripresa automatica**: attivata per impostazione predefinita. Se la risposta fuori sede include una data di ritorno, il piano di coinvolgimento riprende la cadenza in tale data. Se non viene specificata una data di ritorno, il piano di coinvolgimento riprende dopo un buffer di ripresa dopo configurabile dal team.
-* **Opzioni manuali**: è inoltre possibile riprendere, sospendere o saltare manualmente il prospect. Vedi [Gestione dei flussi di lavoro in uscita esistenti](#manage-existing-engagement-plans).
+* **Ripresa automatica**: attivata per impostazione predefinita. Se la risposta fuori sede include una data di ritorno, il flusso di lavoro in uscita riprende la cadenza in tale data. Se non viene specificata una data di ritorno, il flusso di lavoro in uscita riprende dopo un buffer di ripresa dopo configurabile dal team.
+* **Opzioni manuali**: un rappresentante può comunque selezionare **[!UICONTROL Riprendi ora]** o pianificare una data di ripresa specifica. Vedi [Gestione dei flussi di lavoro in uscita esistenti](#manage-existing-outbound-workflows).
 
 ## Gestisci flussi di lavoro in uscita esistenti
 
-Nella pagina **[!UICONTROL Flussi di lavoro in uscita]**, la scheda **[!UICONTROL Sfoglia]** elenca tutti i piani di coinvolgimento disponibili. Ogni scheda mostra l’obiettivo, i punti di contatto configurati e le metriche delle prestazioni. Utilizzare questa visualizzazione per monitorare i flussi di lavoro in uscita, esaminare le bozze o aggiungere potenziali clienti.
+Nella pagina **[!UICONTROL Flussi di lavoro in uscita]**, la scheda **[!UICONTROL Sfoglia]** elenca tutti i flussi di lavoro in uscita disponibili. Ogni scheda mostra l’obiettivo, i punti di contatto configurati e le metriche delle prestazioni. Utilizzare questa visualizzazione per monitorare i flussi di lavoro in uscita, esaminare le bozze o aggiungere potenziali clienti.
 
 ## Posta in uscita e-mail
 
@@ -222,13 +230,13 @@ Quando connetti il calendario, Sales Qualifier genera un collegamento di prenota
 
 * **Collegamenti prenotazione** - Configura la connessione al calendario e la disponibilità in [Impostazioni profilo](profile-settings.md). Aggiungi il collegamento di prenotazione alla firma e-mail in modo che venga visualizzato nelle e-mail in uscita.
 * **Inserimento cadenza** - Sales Qualifier inserisce il collegamento di prenotazione nei punti rilevanti di una cadenza. Potete modificarne la posizione.
-* **Pausa prenotazione** - Quando un prospect registra una riunione, **[!UICONTROL Pausa prenotazione riunione]** interrompe ulteriori follow-up. Vedere [Passaggio 4: Configurare le impostazioni del piano di coinvolgimento](#step-4-configure-engagement-plan-settings).
+* **Pausa prenotazione** - Quando un prospect registra una riunione, **[!UICONTROL Pausa prenotazione riunione]** interrompe ulteriori follow-up. Vedere [Passaggio 4: Configurare le impostazioni del flusso di lavoro in uscita](#step-4-configure-outbound-workflow-settings).
 
 Tieni traccia degli esiti della prenotazione nella pagina [Prestazioni in uscita](performance.md).
 
-## Best practice relative al piano di coinvolgimento
+## Best practice per i flussi di lavoro in uscita
 
-* **Definisci un obiettivo specifico.** Il targeting, la cadenza e le e-mail derivano tutti dall’obiettivo. Indicare il risultato che si desidera ottenere con il piano di coinvolgimento.
+* **Definisci un obiettivo specifico.** Il targeting, la cadenza e le e-mail derivano tutti dall’obiettivo. Indicare il risultato che si desidera ottenere con il flusso di lavoro in uscita.
 * **Finalizza i prompt dei punti di contatto prima della generazione per singolo prospect.** Dopo la generazione in blocco, le modifiche vengono in genere apportate un prospect alla volta.
 * **Usa il ragionamento come controllo qualità.** Se viene enfatizzato il segnale sbagliato o se manca un segnale rilevante, modifica l’e-mail o rivedi il prompt del punto di contatto e rigenera la cadenza.
 * **Corrispondenza tra lo strumento di modifica e la modifica.** Utilizza modifiche dirette per la formulazione e il tono. Utilizza **[!UICONTROL Genera con IA]** per la ristrutturazione o la ridefinizione dei frame.

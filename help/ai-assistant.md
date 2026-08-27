@@ -12,7 +12,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-source-git-commit: 08dd05e1d13b501d43d457e6217a43aaabdb1d0d
+source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
 workflow-type: tm+mt
 source-wordcount: 401
 ht-degree: 1%
@@ -26,7 +26,7 @@ AI Chat risponde a domande in linguaggio naturale in base al contesto di vendita
 
 ## Apri chat IA
 
-Seleziona il pulsante mobile **[!UICONTROL Chat AI]** per aprire il pannello chat. Il pannello si apre accanto alla pagina corrente per consentire la visualizzazione di un prospect, un account o un piano di coinvolgimento. Trascinate il bordo del pannello per ridimensionarlo. Per chiudere il pannello, seleziona di nuovo **[!UICONTROL Chat AI]**.
+Seleziona il pulsante mobile **[!UICONTROL Chat AI]** per aprire il pannello chat. Il pannello si apre accanto alla pagina corrente in modo da poter mantenere in visualizzazione un prospect, un account o un flusso di lavoro in uscita. Trascinate il bordo del pannello per ridimensionarlo. Per chiudere il pannello, seleziona di nuovo **[!UICONTROL Chat AI]**.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Utilizza la chat basata su IA per le seguenti attività:
 * **Ricercare e riepilogare**: richiedere un riepilogo di un account, di un gruppo di acquisto o del recente impegno di un prospect.
 * **Posizionamento della build**: chiedi all&#39;assistente di posizionare la soluzione per un account specifico prima di una riunione.
 * **Bozza e perfeziona l&#39;indirizzo**: chiedigli di scrivere o riscrivere un&#39;e-mail. Specifica il tono, la lunghezza, la lingua e se includere le emoticon.
-* **Ottieni consigli**: chiedi a quali potenziali clienti o account assegnare la priorità oppure richiedi un obiettivo o una cadenza per un nuovo piano di coinvolgimento.
+* **Ottieni consigli**: chiedi a quali potenziali clienti o account assegnare la priorità oppure richiedi un obiettivo o una cadenza per un nuovo flusso di lavoro in uscita.
 * **Trova i dettagli di contatto**: chiedi all&#39;assistente di arricchire un prospect con ulteriori informazioni di contatto e di sfondo.
 
 ## Risposte al terreno nel playbook
