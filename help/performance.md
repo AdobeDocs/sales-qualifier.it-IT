@@ -4,11 +4,10 @@ description: Scopri come rivedere i rapporti Prestazioni organizzazione e Presta
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/ofBw7JHKkkQaPOeUZ6rreLDAhAfineLveBeVYK-CerQ'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
-source-wordcount: 321
+source-wordcount: 334
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 0%
 
 Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Prestazioni in uscita]** per tenere traccia dell&#39;attività in uscita e dei risultati nel tuo team. Il dashboard include due visualizzazioni: **[!UICONTROL Prestazioni organizzazione]** e **[!UICONTROL Prestazioni campagna]**.
 
-[Prestazioni in uscita](assets/outbound-performance.png){width="800" zoomable="yes"}
+![Prestazioni in uscita](assets/outbound-performance.png){width="800" zoomable="yes"}
 
 ## Filtro e periodo di tempo
 
@@ -33,7 +32,7 @@ Questi controlli sono validi sia per le viste che per tutte le schede:
 
 ### Scheda Panoramica
 
-Nella scheda **[!UICONTROL Panoramica]** sono riepilogati i risultati in uscita:
+Nella scheda **[!UICONTROL Panoramica]** sono riepilogati i risultati in uscita. Fare clic su una delle caselle per visualizzare il grafico con tali informazioni.
 
 * **Tessere**: pipeline, coinvolgimento e-mail e attività manuale, ciascuno con una variazione di tendenza rispetto al periodo precedente.
 * **Grafico dell&#39;andamento delle prestazioni**: prestazioni in uscita nel periodo di tempo selezionato.

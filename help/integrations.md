@@ -3,18 +3,12 @@ title: Gestire le integrazioni
 description: Scopri come connettere Outlook, gestire le connessioni CRM, mappare i campi in entrata, sincronizzare le attività e configurare la rinuncia e-mail globale in Sales Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User, Admin
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 351b27d35049b0bb576e9b84f7fd6fada791bb52
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4bid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 483e57ab9d8f3f5e4201e0b691e37727a25d3f22
 workflow-type: tm+mt
-source-wordcount: 1379
+source-wordcount: 1377
 ht-degree: 1%
 
 ---
@@ -28,7 +22,7 @@ Questo articolo spiega come connettere Outlook, gestire una connessione CRM, map
 
 >[!IMPORTANT]
 >
->La connessione Outlook è per rappresentante. Le impostazioni di gestione delle relazioni con i clienti e di conformità descritte più avanti in questo articolo si applicano all’intera organizzazione. Per accedere a tali impostazioni a livello di organizzazione, è necessario appartenere ai gruppi di utenti `Sales Qualifier` e `Sales Qualifier Admins`. Gli utenti standard possono utilizzare i dati e i filtri CRM configurati, ma non possono modificare le impostazioni. Consulta [Ruoli utente e autorizzazioni](user-roles-permissions.md).
+>La connessione Outlook è per rappresentante. Le impostazioni di gestione delle relazioni con i clienti e di conformità descritte più avanti in questo articolo si applicano all’intera organizzazione. Per accedere a tali impostazioni a livello di organizzazione, è necessario appartenere ai gruppi di utenti `Sales Qualifier` e `Sales Qualifier Admins`. Gli utenti standard possono utilizzare i dati e i filtri CRM configurati, ma non possono modificare le impostazioni.
 
 ## Connetti Outlook
 
@@ -67,7 +61,7 @@ Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]** e s
 | **[!UICONTROL Integrazioni]** | **[!UICONTROL Connessioni CRM]**, **[!UICONTROL Centro informazioni]** |
 | **[!UICONTROL Conformità]** | **[!UICONTROL Impostazioni e-mail]** |
 
-Per il Centro informazioni, vedere [Centro informazioni](knowledge-center.md).
+Per il Centro informazioni, vedere [Creare un playbook del Centro informazioni](admin-settings.md#knowledge-center).
 
 ## Gestire le connessioni CRM
 
@@ -96,7 +90,7 @@ Una scheda non configurata mostra **[!UICONTROL Connetti]**. Una scheda configur
 
    Immetti **[!UICONTROL ID client (chiave consumer)]**, **[!UICONTROL URL istanza]** e **[!UICONTROL Segreto client]**. Utilizzare il modulo URL dell&#39;istanza canonica `https://{{mydomain}}.my.salesforce.com`.
 
-   ![Connessione Salesforce](assets/crm-conn-salesforce.png){width="800" zoomable="yes"}
+   ![Credenziali Salesforce](assets/crm-salesforce-config.png){width="800" zoomable="yes"}
 
    >[!TAB Microsoft Dynamics]
 
@@ -125,8 +119,13 @@ Se Sales Qualifier rifiuta le credenziali, identifica la causa, ad esempio crede
 
 La mappatura in entrata controlla quali campi CRM importa in Sales Qualifier e dove compaiono. I campi sono raggruppati in sezioni e ogni sezione appartiene a un tipo di entità.
 
+![Mappatura in entrata](assets/crm-conn-salesforce.png){width="800" zoomable="yes"}
+
 1. Sulla scheda CRM connessa, selezionare **[!UICONTROL Gestione]**.
 1. Nella scheda **[!UICONTROL Inbound mapping]**, selezionare **[!UICONTROL Add section]**.
+
+   ![Aggiungi sezione](assets/crm-add-section.png){width="800" zoomable="yes"}
+
 1. Nel passaggio **Seleziona sezione**, scegli il tipo di entità, quindi seleziona **[!UICONTROL Successivo]**:
 
    | Entità | Dove vengono visualizzati i campi |
@@ -197,5 +196,4 @@ L’amministratore del sistema di gestione delle relazioni con i clienti prepara
 >[!MORELIKETHIS]
 >
 >* [Introduzione](getting-started.md)
->* [Ruoli utente e autorizzazioni](user-roles-permissions.md)
 >* [Account](accounts.md)

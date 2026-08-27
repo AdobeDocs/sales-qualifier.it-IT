@@ -4,16 +4,10 @@ description: Scopri come creare, condividere, rivedere e gestire flussi di lavor
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 351b27d35049b0bb576e9b84f7fd6fada791bb52
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
 source-wordcount: 1923
 ht-degree: 0%
@@ -105,7 +99,7 @@ Imposta un ritardo del punto di contatto in giorni, ore e minuti. Imposta giorni
 
 #### Utilizzare il Knowledge Center nei prompt
 
-Se l&#39;organizzazione ha creato un playbook del [Centro informazioni](knowledge-center.md), fare riferimento al file nel prompt. Denomina il documento e descrivi il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
+Se l&#39;organizzazione ha creato un playbook del [Centro informazioni](admin-settings.md#knowledge-center), fare riferimento al file nel prompt. Denomina il documento e descrivi il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
 
 Quando la cadenza e i prompt sono pronti, selezionare **[!UICONTROL Avanti: Impostazioni]**.
 
@@ -117,7 +111,7 @@ Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene esegui
 
 ![Pannello impostazioni](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
-1. Rivedi il nome del flusso di lavoro in uscita **&#x200B;**&#x200B;e modificalo se necessario.
+1. Rivedi il nome del flusso di lavoro in uscita **** e modificalo se necessario.
 1. In **[!UICONTROL Numero massimo di potenziali clienti per flusso di lavoro in uscita]**, confermare il numero massimo di potenziali clienti che il flusso di lavoro in uscita può gestire contemporaneamente.
 1. Imposta la **[!UICONTROL finestra di invio]** per le ore in cui le e-mail in uscita possono essere inviate.
 1. Seleziona i giorni della settimana in cui le e-mail possono essere inviate. Per evitare gli invii di fine settimana, seleziona solo i giorni della settimana invece di utilizzare un&#39;impostazione **[!UICONTROL Ignora fine settimana]** separata.
@@ -245,5 +239,5 @@ Tieni traccia degli esiti della prenotazione nella pagina [Prestazioni in uscita
 >[!MORELIKETHIS]
 >
 >* [Attività](tasks.md)
->* [Centro conoscenze](knowledge-center.md)
+>* [Centro conoscenze](admin-settings.md#knowledge-center)
 >* [Prestazioni in uscita](performance.md)

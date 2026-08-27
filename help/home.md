@@ -4,18 +4,13 @@ description: Scopri Sales Qualifier, un’app basata sull’intelligenza artific
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/4IsAlgFBxddHCz0-CLCDXPCHI7m3motiXhgCR6MZq0k'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 483e57ab9d8f3f5e4201e0b691e37727a25d3f22
 workflow-type: tm+mt
-source-wordcount: 412
-ht-degree: 22%
+source-wordcount: 391
+ht-degree: 21%
 
 ---
 
@@ -36,13 +31,13 @@ I BDR possono utilizzare il browser e i plug-in e-mail per accedere alle informa
 * **Fai domande in linguaggio naturale** con la chat basata su IA, che utilizza i tuoi dati di gestione delle relazioni con i clienti, il coinvolgimento e il Knowledge Center.
 * **Tieni traccia delle prestazioni di outreach** con rapporti e-mail e prenotazione riunioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476569?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3476550)
 
 ## Scopri la guida
 
 ::::landing-cards-container
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introduzione
 
@@ -52,7 +47,7 @@ Completa l’impostazione dell’amministratore una tantum per i gruppi di utent
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Potenziali clienti
 
@@ -62,7 +57,7 @@ Crea, filtra e controlla l’elenco di potenziali clienti.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Account
 
@@ -72,7 +67,7 @@ Dai priorità all’estensione con pipeline a livello di account e dati di coinv
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Flussi di lavoro in uscita
 
@@ -82,7 +77,7 @@ Crea cadenze guidate da obiettivi con e-mail generate dall’intelligenza artifi
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Attività
 
@@ -92,7 +87,7 @@ Elabora le chiamate telefoniche, LinkedInMail e le attività di revisione e-mail
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Prestazioni
 
@@ -102,17 +97,17 @@ Verifica le prestazioni di e-mail e prenotazione riunioni.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro conoscenze
 
 Crea un playbook che attinga l’attività di intelligenza artificiale e l’assistenza nei tuoi materiali.
 
-[Centro conoscenze](knowledge-center.md)
+[Centro conoscenze](admin-settings.md#knowledge-center)
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integrazioni
 
@@ -122,7 +117,7 @@ Connetti Salesforce o Microsoft Dynamics 365 e mappa i campi.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Impostazioni profilo
 
@@ -132,17 +127,7 @@ Configura la disponibilità di e-mail, firma e calendario.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
-
-Ruoli utente e autorizzazioni
-
-Comprendere il modello del gruppo di utenti e amministratori.
-
-[Ruoli utente e autorizzazioni](user-roles-permissions.md)
-:::
-
-:::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat basata su IA
 
