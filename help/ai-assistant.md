@@ -12,9 +12,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
-source-wordcount: 401
+source-wordcount: 404
 ht-degree: 1%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 1%
 # Chat basata su IA
 
 AI Chat risponde a domande in linguaggio naturale in base al contesto di vendita. Utilizzala per ricercare un account, prepararti per una chiamata, redigere una bozza di sensibilizzazione e assegnare una priorità al tuo lavoro senza uscire da Sales Qualifier.
+
+![Pulsante Chat AI](assets/ai-chat.png){width="800" zoomable="yes"}
 
 ## Apri chat IA
 
@@ -36,7 +38,7 @@ Seleziona il pulsante mobile **[!UICONTROL Chat AI]** per aprire il pannello cha
 
 La chat di IA può utilizzare le seguenti origini:
 
-* Il playbook della tua organizzazione nel [Centro conoscenze](knowledge-center.md).
+* Il playbook della tua organizzazione nel [Centro conoscenze](admin-settings.md#knowledge-center).
 * Il CRM connesso, inclusi lead, contatti, account, opportunità e attività.
 * [!DNL Marketo] dati attività e coinvolgimento.
 * Ricerche account e notizie recenti raccolte da Account Qualification Agent.
@@ -54,7 +56,7 @@ Utilizza la chat basata su IA per le seguenti attività:
 
 ## Risposte al terreno nel playbook
 
-Per utilizzare il playbook del [Centro conoscenze](knowledge-center.md), consultare il Centro conoscenze nella domanda. Ad esempio:
+Per utilizzare il playbook del [Centro conoscenze](admin-settings.md#knowledge-center), consultare il Centro conoscenze nella domanda. Ad esempio:
 
 `From the Knowledge Center, help me position our security solution for ABC Corp ahead of tomorrow's call.`
 
@@ -76,6 +78,6 @@ L’utilizzo di AI Chat da parte della tua organizzazione è disciplinato dai te
 
 >[!MORELIKETHIS]
 >
->* [Centro conoscenze](knowledge-center.md)
+>* [Centro conoscenze](admin-settings.md#knowledge-center)
 >* [Account](accounts.md)
 >* [Flussi di lavoro in uscita](outbound-workflows.md)

@@ -12,9 +12,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
-source-wordcount: 686
+source-wordcount: 675
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 # Configurare gli elementi di rilievo del marketing
 
-Gli elementi di rilievo marketing mostrano l&#39;attività [!DNL Marketo] di ogni prospect in tempo reale, ad esempio aperture e clic via e-mail, visite Web e riempimenti di moduli, nella scheda **[!UICONTROL Elementi di rilievo marketing]** di un prospect in Sales Qualifier. Questo articolo spiega come connettere la tua istanza di [!DNL Marketo] in modo che l&#39;attività entri.
+Marketing Highlights mostra l&#39;attività live [!DNL Marketo] di ogni potenziale cliente, ad esempio aperture e clic via e-mail, visite Web e riempimenti di moduli. Questo articolo spiega come connettere la tua istanza di [!DNL Marketo] in modo che l&#39;attività entri.
 
 >[!IMPORTANT]
 >

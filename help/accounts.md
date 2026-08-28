@@ -10,9 +10,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
-source-wordcount: 632
+source-wordcount: 643
 ht-degree: 0%
 
 ---
@@ -28,6 +28,8 @@ Apri un account dal profilo di un potenziale cliente associato.
 
 1. Seleziona **[!UICONTROL Prospect]** nella barra di navigazione a sinistra e apri un prospect. Vedi [Potenziali clienti](prospects.md).
 1. Nella pagina dei dettagli del prospect, selezionare la scheda **[!UICONTROL Account]**.
+
+![Pagina dettagli prospect con schede Persona e Account](./assets/account-home.png){width="800" zoomable="yes"}
 
 Sales Qualifier identifica l’account dal record CRM del prospect. La stessa visualizzazione account è disponibile da ogni prospect associato a tale account. Se Sales Qualifier non riesce a trovare un account, nella scheda viene visualizzato _Nessun account trovato_.
 
@@ -77,6 +79,8 @@ La scheda **[!UICONTROL Ricerca account]** contiene tre aree:
 * **[!UICONTROL Categorie di ricerca]**—Argomenti di ricerca. Selezionare una categoria per visualizzarne la ricerca nel riquadro centrale.
 * **Contenuto ricerca**: schede di ricerca generate dall&#39;intelligenza artificiale raggruppate per categoria. Una scheda può includere il dominio di origine e le date in cui il segnale è stato rilevato per la prima volta e per l’ultima volta.
 * **[!UICONTROL Notizie recenti]** - Notizie aggiornate sull&#39;account, incluse date, tag e collegamenti di origine.
+
+![Scheda Ricerca account](./assets/account-detail.png){width="800" zoomable="yes"}
 
 Se non è possibile caricare la ricerca o le notizie, ogni area offre un&#39;azione **[!UICONTROL Ricarica]** per riprovare.
 

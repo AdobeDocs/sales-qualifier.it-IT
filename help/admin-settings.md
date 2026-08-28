@@ -10,9 +10,9 @@ feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
   - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
 internal-label: Administration
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+source-git-commit: 483e57ab9d8f3f5e4201e0b691e37727a25d3f22
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 856
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione d
 
 >[!IMPORTANT]
 >
->L&#39;accesso a **[!UICONTROL Impostazioni amministratore]** richiede l&#39;appartenenza ai gruppi di utenti `Sales Qualifier` e `Sales Qualifier Admins`. Consulta [Ruoli utente e autorizzazioni](user-roles-permissions.md).
+>L&#39;accesso a **[!UICONTROL Impostazioni amministratore]** richiede l&#39;appartenenza ai gruppi di utenti `Sales Qualifier` e `Sales Qualifier Admins`.
 
 ## MCP CRM e il plug-in incorporato
 
@@ -48,7 +48,7 @@ Sales Qualifier legge gli utenti, i contatti, le mappature dei proprietari, i le
 
 ## Mappa campi CRM (mappatura in entrata)
 
-Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. Il mapping in entrata controlla i campi CRM che il qualificatore vendite richiama nell&#39;applicazione.
+Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. La mappatura in entrata controlla quali campi di gestione delle relazioni con i clienti vengono estratti da Sales Qualifier nell’applicazione.
 
 1. Selezionare **[!UICONTROL Aggiungi sezione]**.
 1. Immettere un nome e una descrizione per la sezione.
@@ -73,6 +73,31 @@ I campi mappati vengono visualizzati nelle aree corrispondenti di Sales Qualifie
 1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare le attività di Sales Qualifier Outreach con CRM e Marketo. Le attività di invio, apertura, clic e risposta dei messaggi e-mail includono il nome del flusso di lavoro in uscita.
 
 Quando la sincronizzazione delle attività è disattivata, Sales Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di outreach con il sistema CRM o Marketo.
+
+## Crea un playbook per un Knowledge Center {#knowledge-center}
+
+Il **[!UICONTROL Centro conoscenze]** consente al Account Qualification Agent (AQA) di accedere ai materiali di vendita. Sales Qualifier utilizza questi materiali per generare ricerche, approfondimenti sulle qualifiche e attività di sensibilizzazione che riflettono il modo in cui l’organizzazione vende. Solo gli amministratori possono creare e gestire la playbook.
+
+![Centro conoscenze](assets/knowledge-center.png){width="800" zoomable="yes"}
+
+1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]**, seleziona **[!UICONTROL Impostazioni amministratore]** e seleziona **[!UICONTROL Centro informazioni]**
+1. u
+1. Imposta **[!UICONTROL Nome società]** e **[!UICONTROL URL società]** utilizzati da Sales Qualifier per eseguire ricerche nella società e bozze di e-mail.
+1. Carica giochi di vendita, profili cliente ideali (ICP), guide di posizionamento e altro materiale promozionale in formato PDF, PPTX o DOCX.
+1. Seleziona **[!UICONTROL Genera playbook]**.
+
+In ogni documento caricato viene visualizzato il relativo stato di elaborazione, ad esempio **[!UICONTROL Pronto]**, e la data dell&#39;ultimo aggiornamento.
+
+>[!NOTE]
+>
+>L&#39;elaborazione di un playbook può richiedere fino a 24 ore.
+
+Quando il playbook è pronto, i rappresentanti possono utilizzarlo in due posizioni:
+
+* **Prompt e-mail in uscita** - In un prompt punto di contatto, assegnare un nome al documento e descrivere il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulta [Generare e rivedere i punti di contatto](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Chat AI**: fare riferimento al Centro informazioni nella domanda. Immettere ad esempio `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Vedi [Chat AI](ai-assistant.md).
+
+In entrambi i casi, il contenuto generato riflette i messaggi nel playbook anziché la ricerca generica.
 
 ## Configurare la rinuncia e-mail globale
 
@@ -113,5 +138,4 @@ ORDER BY LastModifiedDate DESC
 >[!MORELIKETHIS]
 >
 >* [Introduzione](getting-started.md)
->* [Ruoli utente e autorizzazioni](user-roles-permissions.md)
 >* [Potenziali clienti](prospects.md)

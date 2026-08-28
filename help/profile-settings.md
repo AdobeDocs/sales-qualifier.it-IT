@@ -9,9 +9,9 @@ product_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e7de3a1e28cb8268b58f1ab1ec10394035bdfd74
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
-source-wordcount: 375
+source-wordcount: 394
 ht-degree: 3%
 
 ---
@@ -21,14 +21,19 @@ ht-degree: 3%
 
 Nel menu di navigazione a sinistra, espandi **[!UICONTROL Configurazione]** e seleziona **[!UICONTROL Impostazioni profilo]**. Utilizza queste impostazioni per gestire i tuoi dati personali, la connessione e-mail, il calendario e la disponibilità della chat.
 
+![Impostazioni profilo](assets/profile-email-config.png)
+
 ## Impostazioni e-mail
 
 Nella scheda **[!UICONTROL Impostazioni e-mail]**, configura le connessioni e-mail.
 
-* **[!UICONTROL Connessioni e-mail]** - Selezionare **[!UICONTROL Connetti Outlook]** e seguire il processo di accesso a Microsoft. Vedere [Connetti Outlook](integrations.md#connect-outlook) per l&#39;accesso che si approva e il percorso di approvazione dell&#39;amministratore, se necessario.
+* **[!UICONTROL Connessioni e-mail]** - Selezionare Microsoft Outlook o Google e seguire la procedura di accesso. Vedere [Connetti Outlook](integrations.md#connect-outlook) per l&#39;accesso che si approva e il percorso di approvazione dell&#39;amministratore, se necessario.
 * **[!UICONTROL Firma e-mail]** - Aggiungi o aggiorna la firma utilizzata nelle e-mail generate. Includi il collegamento [prenotazione riunione](outbound-workflows.md#meeting-booking) per consentire ai potenziali clienti di pianificare il tempo con te.
+* **[!UICONTROL Collegamento per la prenotazione della riunione]** - Invia un invito alla riunione tramite e-mail. Accetta l’URL della riunione.
 
 ### Contesto di bozza e-mail
+
+![Contesto e-mail](assets/profile-email-instructions.png)
 
 Utilizza **[!UICONTROL Contesto di bozza e-mail]** per impostare il tono, la struttura e lo stile dell&#39;e-mail in modo che le e-mail siano coerenti.
 

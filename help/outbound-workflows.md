@@ -13,7 +13,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 351b27d35049b0bb576e9b84f7fd6fada791bb52
+source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
 workflow-type: tm+mt
 source-wordcount: 1923
 ht-degree: 0%
@@ -105,7 +105,7 @@ Imposta un ritardo del punto di contatto in giorni, ore e minuti. Imposta giorni
 
 #### Utilizzare il Knowledge Center nei prompt
 
-Se l&#39;organizzazione ha creato un playbook del [Centro informazioni](knowledge-center.md), fare riferimento al file nel prompt. Denomina il documento e descrivi il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
+Se l&#39;organizzazione ha creato un playbook del [Centro informazioni](admin-settings.md#knowledge-center), fare riferimento al file nel prompt. Denomina il documento e descrivi il contesto da utilizzare. Immettere ad esempio `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
 
 Quando la cadenza e i prompt sono pronti, selezionare **[!UICONTROL Avanti: Impostazioni]**.
 
@@ -245,5 +245,5 @@ Tieni traccia degli esiti della prenotazione nella pagina [Prestazioni in uscita
 >[!MORELIKETHIS]
 >
 >* [Attività](tasks.md)
->* [Centro conoscenze](knowledge-center.md)
+>* [Centro conoscenze](admin-settings.md#knowledge-center)
 >* [Prestazioni in uscita](performance.md)
