@@ -9,9 +9,9 @@ product_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8573d3891d5c8ec8a05637f160f120f933b0ec61
+source-git-commit: f1202dc6d5657875b6cdc35a0116e31cabebf9be
 workflow-type: tm+mt
-source-wordcount: 900
+source-wordcount: 904
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 Utilizza **[!UICONTROL Attività]** per completare le azioni generate dai flussi di lavoro in uscita. Selezionare un&#39;attività, eseguire un&#39;azione, contrassegnarla come completata e continuare con l&#39;attività successiva senza uscire dalla pagina.
 
 Nel menu di navigazione a sinistra, vai a **[!UICONTROL Attività]** > **[!UICONTROL Attività]**.
+
+![Pannello attività](assets/tasks.png)
 
 ## Visualizzazioni attività
 
@@ -43,6 +45,8 @@ Le attività manuali sono associate ai passaggi del flusso di lavoro in uscita e
 * **[!UICONTROL LinkedIn InMail]**—Creato quando una cadenza raggiunge un passaggio LinkedInMail. Il pannello di lavoro mostra il contenuto da copiare e inviare da LinkedIn. Espandi **[!UICONTROL Motivo IA]** per rivedere il motivo.
 
 * **[!UICONTROL Revisione e-mail]** - Creata dopo che Sales Qualifier ha generato le e-mail personalizzate di un potenziale cliente. Seleziona **[!UICONTROL Rivedi e-mail]** per rivedere e approvare le bozze prima dell&#39;inizio dell&#39;estensione. Consulta [Rivedere e perfezionare le e-mail generate](outbound-workflows.md#review-and-refine-generated-emails).
+
+![Revisione e-mail](assets/tasks-review.png)
 
 ### Pannello Lavoro
 

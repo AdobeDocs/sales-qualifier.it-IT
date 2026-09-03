@@ -10,9 +10,9 @@ feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
   - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
 internal-label: Administration
-source-git-commit: 483e57ab9d8f3f5e4201e0b691e37727a25d3f22
+source-git-commit: f1202dc6d5657875b6cdc35a0116e31cabebf9be
 workflow-type: tm+mt
-source-wordcount: 856
+source-wordcount: 845
 ht-degree: 0%
 
 ---
@@ -70,9 +70,9 @@ I campi mappati vengono visualizzati nelle aree corrispondenti di Sales Qualifie
 
 1. Da **[!UICONTROL connessioni CRM]**, selezionare **[!UICONTROL Gestisci]** per il CRM connesso.
 1. Apri **[!UICONTROL Mappatura in uscita]**.
-1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare le attività di Sales Qualifier Outreach con CRM e Marketo. Le attività di invio, apertura, clic e risposta dei messaggi e-mail includono il nome del flusso di lavoro in uscita.
+1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare nuovamente le attività di Sales Qualifier Outreach con CRM e Marketo.
 
-Quando la sincronizzazione delle attività è disattivata, Sales Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di outreach con il sistema CRM o Marketo.
+Quando la sincronizzazione delle attività è disattivata, Sales Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di distribuzione con il tuo CRM o Marketo.
 
 ## Crea un playbook per un Knowledge Center {#knowledge-center}
 
