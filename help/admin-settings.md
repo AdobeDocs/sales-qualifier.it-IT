@@ -4,15 +4,12 @@ description: Scopri come gestire i campi CRM, la sincronizzazione delle attivit�
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4bid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
 internal-label: Administration
-source-git-commit: f1202dc6d5657875b6cdc35a0116e31cabebf9be
+source-git-commit: 527d6a99f1ca51371ab0bc44ee61482bac56fc4f
 workflow-type: tm+mt
-source-wordcount: 845
+source-wordcount: 1089
 ht-degree: 0%
 
 ---
@@ -73,6 +70,34 @@ I campi mappati vengono visualizzati nelle aree corrispondenti di Sales Qualifie
 1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare nuovamente le attività di Sales Qualifier Outreach con CRM e Marketo.
 
 Quando la sincronizzazione delle attività è disattivata, Sales Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di distribuzione con il tuo CRM o Marketo.
+
+## Configurare le regole di sincronizzazione CRM
+
+Sales Qualifier può riscrivere automaticamente gli aggiornamenti dello stato del lead in Salesforce e Microsoft Dynamics quando un potenziale cliente si sposta attraverso un flusso di lavoro in uscita, in modo che i rappresentanti non aggiornino più manualmente il sistema CRM.
+
+### Funzionamento delle regole di sincronizzazione CRM
+
+Un aggiornamento può eseguire il targeting del record **[!UICONTROL Lead]**, **[!UICONTROL Contatto]**, **[!UICONTROL Account]** o **[!UICONTROL Opportunità]**, non solo del lead.
+
+Gli aggiornamenti vengono attivati nei seguenti momenti del flusso di lavoro in uscita:
+
+* Aggiunto a un flusso di lavoro, a una risposta o a una riunione prenotata
+* Rimosso da un rappresentante o da un flusso di lavoro completato senza risposta
+* Rinuncia o e-mail non recapitata
+
+I valori dei campi possono essere personalizzati con token dinamici in modo che l’aggiornamento del sistema di gestione delle relazioni con i clienti rifletta il percorso effettivo del potenziale cliente anziché un valore statico. I token sono disponibili per dettagli quali il nome del rappresentante, il nome del flusso di lavoro in uscita e la data e l’ora della riunione.
+
+Vengono scritti solo valori compatibili con CRM, un campo non riuscito non blocca gli altri e i problemi temporanei vengono ritentati automaticamente. Ogni aggiornamento viene tracciato in modo da poter vedere cosa è sincronizzato e cosa richiede attenzione.
+
+### Configurare le regole di sincronizzazione CRM
+
+Per impostare le regole di sincronizzazione CRM:
+
+1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]** e seleziona **[!UICONTROL Impostazioni amministratore]** > **[!UICONTROL Connessioni CRM]**.
+1. Seleziona **[!UICONTROL Gestisci]** per il CRM connesso, quindi seleziona **[!UICONTROL Regole di sincronizzazione]**.
+1. Scegli l’entità CRM di destinazione e i campi, mappali ai momenti del flusso di lavoro riportati sopra e attiva l’opzione.
+
+Con le regole di sincronizzazione CRM configurate, i team di vendita visualizzano uno stato accurato, personalizzato e aggiornato tra lead, contatti, account e opportunità in ogni fase, con meno ritardi nei dati e lavoro manuale.
 
 ## Crea un playbook per un Knowledge Center {#knowledge-center}
 

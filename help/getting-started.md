@@ -4,19 +4,12 @@ description: Scopri come completare la configurazione dell’amministratore una 
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/-nfmFwZyZFUZhm-uQUjSyTvrORuqJgKSKnENWYtvubs'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4cd91e6f39b7ba30d5650fad1304c74a6d6c91f0
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+feature_v2: id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4bid: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 527d6a99f1ca51371ab0bc44ee61482bac56fc4f
 workflow-type: tm+mt
-source-wordcount: 1015
+source-wordcount: 1017
 ht-degree: 0%
 
 ---
@@ -32,7 +25,7 @@ Dopo che Adobe esegue il provisioning di Sales Qualifier per la tua organizzazio
 
 I gruppi di utenti in Adobe Admin Console vengono utilizzati per controllare l’accesso a Sales Qualifier. Entrambi i gruppi devono essere creati prima che gli utenti possano accedere.
 
-Per informazioni sulla configurazione dei gruppi, consulta la [documentazione di Adobe Admin Console](https://helpx.adobe.com/it/business/enterprise/users/users-and-groups/user-groups.html).
+Per informazioni sulla configurazione dei gruppi, consulta la [documentazione di Adobe Admin Console](https://helpx.adobe.com/business/enterprise/users/users-and-groups/user-groups.html).
 
 >[!PREREQUISITES]
 >
@@ -47,7 +40,7 @@ Gli utenti devono appartenere al gruppo di utenti `Sales Qualifier` per accedere
 
 Questi passaggi vengono eseguiti in Adobe Admin Console.
 
-1. Dal commutatore app a nove punti, seleziona **[!UICONTROL Admin Console]**.
+1. Dal commutatore app, seleziona **[!UICONTROL Admin Console]**.
 1. Seleziona **[!UICONTROL Utenti]** > **[!UICONTROL Gruppi di utenti]** > **[!UICONTROL Nuovo gruppo di utenti]**.
 1. Immetti `Sales Qualifier` per il nome del gruppo e seleziona **[!UICONTROL Salva]**.
 1. Apri **[!UICONTROL Profili di prodotto assegnati]** e seleziona **[!UICONTROL Assegna profilo]**.
@@ -72,7 +65,7 @@ I nomi dei gruppi di utenti devono corrispondere esattamente come mostrato nei p
 
 ## Connetti il tuo CRM
 
-Sales Qualifier si connette a Salesforce o Microsoft Dynamics 365 per fornire ai BDR una visualizzazione unificata di utenti, lead, contatti, account, opportunità, mapping dei proprietari e attività correlate. La connessione iniziale richiede l&#39;accesso in sola lettura a questi dati CRM. Prima di connettere Sales Qualifier, rivolgiti all’amministratore di CRM per preparare le credenziali. Consulta [Integrazioni](integrations.md) per i dettagli di integrazione.
+Sales Qualifier si connette a Salesforce o Microsoft Dynamics 365 per fornire ai BDR una visualizzazione unificata di utenti, lead, contatti, account, opportunità, mapping dei proprietari e attività correlate. La connessione iniziale richiede l&#39;accesso in sola lettura a questi dati CRM. Per preparare le credenziali prima di connettere Sales Qualifier, rivolgiti al tuo amministratore CRM. Consulta [Integrazioni](integrations.md) per i dettagli di integrazione.
 
 >[!PREREQUISITES]
 >
@@ -93,7 +86,7 @@ Un amministratore di sistema Salesforce crea un’app client esterna (denominata
 >* Modifica tutti i dati
 >* Gestione app collegate
 >
->Senza _Gestisci app collegate_, l&#39;amministratore non può visualizzare l&#39;ID client e il segreto client.
+>L&#39;amministratore richiede _Gestione app collegate_ per visualizzare l&#39;ID client e il segreto client.
 
 1. In Salesforce, vai a **[!UICONTROL Configurazione]** > **[!UICONTROL Gestione app]** e seleziona **[!UICONTROL Nuova app connessa]** o **[!UICONTROL Nuova app client esterna]**.
 1. Immettere il nome di un&#39;applicazione e l&#39;indirizzo e-mail del contatto amministrativo.
@@ -118,7 +111,7 @@ Un amministratore di sistema Salesforce crea un’app client esterna (denominata
    * URL di callback
    * URL istanza Salesforce
 
-I passaggi possono essere leggermente diversi da quelli qui descritti. Per ulteriori informazioni, consulta la [documentazione di Salesforce](https://help.salesforce.com/s/).
+I passaggi sono leggermente diversi da quelli qui descritti. Per ulteriori informazioni, consulta la [documentazione di Salesforce](https://help.salesforce.com/s/?language=en_US).
 
 ### Trovare l’URL dell’istanza di Salesforce
 
@@ -142,7 +135,7 @@ Un amministratore Microsoft Dynamics 365 o Azure registra un’applicazione e la
 1. Selezionare l&#39;applicazione Microsoft Entra registrata.
 1. Assegna un ruolo di sicurezza che consenta l&#39;accesso in lettura a lead, contatti, account, opportunità e attività.
 
-   È necessario un ruolo di sicurezza. Senza un accesso, l’applicazione non può accedere ai dati di Dynamics.
+   È necessario un ruolo di sicurezza. È necessario un ruolo di sicurezza affinché l&#39;applicazione possa accedere ai dati Dynamics.
 
 1. Raccogli l’ID client, il segreto client, l’ID tenant e l’URL dell’istanza di Dynamics. Utilizzare il modulo URL canonico `https://{{mydomain}}.crm.dynamics.com`.
 
