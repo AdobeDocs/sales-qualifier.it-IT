@@ -13,9 +13,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
+source-git-commit: 527d6a99f1ca51371ab0bc44ee61482bac56fc4f
 workflow-type: tm+mt
-source-wordcount: 1923
+source-wordcount: 2062
 ht-degree: 0%
 
 ---
@@ -57,6 +57,8 @@ La procedura guidata Flusso di lavoro in uscita prevede cinque passaggi: **[!UIC
 1. Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Flussi di lavoro in uscita]**.
 1. Nella scheda **[!UICONTROL Sfoglia]**, seleziona **[!UICONTROL + Crea flusso di lavoro in uscita]** nell&#39;angolo superiore destro.
 
+Gli amministratori possono assegnare il flusso di lavoro in uscita a un compagno di team anziché a se stessi. Prima di avviare il flusso di lavoro, seleziona **[!UICONTROL Assegna utente]** dal menu a discesa e scegli il compagno di squadra.
+
 ### Passaggio 1: definire l’obiettivo
 
 L’obiettivo definisce il risultato previsto e guida il targeting, la cadenza e la generazione di e-mail.
@@ -87,7 +89,7 @@ Dopo aver configurato il targeting, l’intelligenza artificiale analizza l’ob
 
 ![Punti di contatto](assets/create-workflow-touchpoints.png){width="800" zoomable="yes"}
 
-Espandi un punto di contatto e-mail per leggerne il prompt. Il prompt guida l’intelligenza artificiale durante la scrittura dell’e-mail di ogni potenziale cliente, inclusi il tono, la lunghezza, lo stato attivo e call to action.
+Per leggere il prompt, espandi un punto di contatto e-mail. Il prompt guida l’intelligenza artificiale durante la scrittura dell’e-mail di ogni potenziale cliente, inclusi il tono, la lunghezza, lo stato attivo e call to action.
 
 Se si digita una barra `/`, viene visualizzato l&#39;elenco dei token definiti che è possibile utilizzare per personalizzare l&#39;e-mail.
 
@@ -127,7 +129,9 @@ Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene esegui
 1. In **[!UICONTROL Autorizzazioni]**, mantieni **[!UICONTROL Privato]** (impostazione predefinita) o seleziona **[!UICONTROL Condiviso con tutti]**. Per ulteriori dettagli, vedere [Condividere un flusso di lavoro in uscita](#share-an-outbound-workflow).
 1. Seleziona **[!UICONTROL Salva e aggiungi prospect]**.
 
-Il piè di pagina di rinuncia è configurato a livello globale da un amministratore e si applica alle e-mail in uscita indipendentemente dalle impostazioni del flusso di lavoro in uscita. Consulta [Configurare la rinuncia e-mail globale](integrations.md#configure-global-email-opt-out).
+Per ripristinare i valori predefiniti della finestra di invio, del fuso orario, dei giorni, delle regole di completamento e fuori sede, della visibilità e della cadenza dei suggerimenti, attivare **[!UICONTROL Ripristina impostazioni predefinite]**. Il nome del flusso di lavoro in uscita viene lasciato invariato.
+
+Un amministratore configura il piè di pagina di rinuncia a livello globale, che si applica alle e-mail in uscita indipendentemente dalle impostazioni del flusso di lavoro in uscita. Consulta [Configurare la rinuncia e-mail globale](integrations.md#configure-global-email-opt-out).
 
 ### Passaggio 5: aggiungere potenziali clienti e avviare la generazione di e-mail
 
@@ -144,6 +148,10 @@ Il salvataggio apre la vista di selezione del prospect con i filtri di targeting
 IA genera un’e-mail personalizzata per ogni potenziale cliente e punto di contatto e-mail selezionati. I punti di contatto Phone e LinkedInMail rimangono passaggi pianificati. Per continuare a lavorare durante la generazione, selezionare **[!UICONTROL Notifica quando pronto]**.
 
 Per ogni potenziale cliente, l’intelligenza artificiale combina il prompt del punto di contatto con i dati di persone e account, la cronologia del coinvolgimento e le notizie recenti per produrre un oggetto e un corpo.
+
+Le e-mail generate utilizzano qualsiasi dato aggiuntivo salvato su un potenziale cliente, inclusi [campi personalizzati importati con il potenziale cliente](prospects.md#build-your-prospect-list), pertanto le bozze sono più rilevanti. Non esiste un elenco fisso di campi supportati e i campi nuovi o personalizzati funzionano senza configurazioni aggiuntive. L’intelligenza artificiale utilizza questi dati quando sono rilevanti; se un potenziale cliente non ha dati aggiuntivi, la generazione di e-mail funziona come prima.
+
+Le e-mail possono anche essere generate nel linguaggio del potenziale cliente, con i saluti corretti, il fraseggio naturale e il tono di business appropriato. Le lingue supportate sono il francese, il tedesco, lo spagnolo e altro ancora.
 
 ## Rivedere e perfezionare le e-mail generate
 
@@ -192,7 +200,7 @@ L’approvazione attiva la cadenza per un potenziale cliente. Il sistema non inv
 1. Nell’elenco a sinistra dei potenziali clienti, seleziona i potenziali clienti di cui hai rivisto e-mail e che sei pronto a inviare.
 1. Seleziona **[!UICONTROL Approva e iscrivi prospect]** nell&#39;angolo inferiore destro.
 
-Le e-mail approvate vengono inviate in base ai giorni selezionati, alla finestra di invio, all’opzione ore attive e all’impostazione del fuso orario del flusso di lavoro in uscita. Un punto di contatto con un ritardo pari a zero invia senza attesa; ogni punto di contatto segue il ritardo configurato. I potenziali clienti non approvati rimangono in **[!UICONTROL Pronti per la revisione]**.
+Le e-mail approvate vengono inviate in base ai giorni selezionati, alla finestra di invio, all’opzione ore attive e all’impostazione del fuso orario del flusso di lavoro in uscita. Un punto di contatto con ritardo pari a zero invia immediatamente; ogni altro punto di contatto segue il ritardo configurato. I potenziali clienti non approvati rimangono in **[!UICONTROL Pronti per la revisione]**.
 
 ## Condividere un flusso di lavoro in uscita
 
@@ -202,7 +210,7 @@ Ogni flusso di lavoro in uscita ha un&#39;impostazione **[!UICONTROL Autorizzazi
 >
 >La condivisione è permanente. Dopo che un flusso di lavoro in uscita è impostato su **[!UICONTROL Condiviso con tutti]**, non può essere ripristinato su **[!UICONTROL Privato]**.
 
-In un flusso di lavoro in uscita condiviso, i team possono registrare i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del flusso di lavoro in uscita può modificare le impostazioni a livello di piano, tra cui la pianificazione, il fuso orario, la cadenza e altre impostazioni. Queste impostazioni sono di sola lettura per i colleghi.
+In un flusso di lavoro in uscita condiviso, i team possono registrare i propri potenziali clienti. Ogni persona può gestire o mettere in pausa solo i potenziali clienti a cui è iscritta, incluso l’utilizzo di azioni in blocco. Solo il proprietario del flusso di lavoro in uscita può modificare le impostazioni a livello di piano, tra cui pianificazione, fuso orario e cadenza. Queste impostazioni sono di sola lettura per i colleghi.
 
 Utilizza questi filtri per mantenere attivi i flussi di lavoro in uscita condivisi e i risultati:
 
