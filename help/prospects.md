@@ -1,23 +1,25 @@
 ---
-title: Potenziali clienti in Sales Qualifier
-description: Scopri come creare l’elenco di potenziali clienti da origini CRM, importate e aggiunte manualmente, filtrare i potenziali clienti ed esaminare i dettagli in Sales Qualifier.
+title: Potenziali clienti in Adobe Marketo Qualifier
+description: Scopri come creare l’elenco di potenziali clienti da origini CRM, importate e aggiunte manualmente, filtrare i potenziali clienti e rivedere i dettagli in Adobe Marketo Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/zf2H5rq1JlIT26LqLPMrm2Mq3tSIrLOiTEw6BXb1w2U'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+    internal-label: Integrations
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c7f4e1b7adc4b3420ea5f16c3b426c40bb300d45
+    internal-label: Insights
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 698
+source-wordcount: '701'
 ht-degree: 1%
-
 ---
-
 
 # Potenziali clienti
 
@@ -34,9 +36,9 @@ Seleziona **[!UICONTROL Potenziali]** nella barra di navigazione a sinistra per 
 
 L’elenco dei potenziali clienti combina persone provenienti da più origini:
 
-* **Prospetti CRM**: Sales Qualifier importa automaticamente i lead e i contatti assegnati all&#39;utente connesso. Consulta [Integrazioni](integrations.md).
+* **Prospettivi CRM**: Adobe Marketo Qualifier importa automaticamente i lead e i contatti assegnati all&#39;utente connesso. Consulta [Integrazioni](integrations.md).
 * **Prospect importati** - Prospect importati da un file CSV.
-* **Potenziali aggiunti manualmente** - Singoli potenziali aggiunti in Sales Qualifier.
+* **Potenziali aggiunti manualmente** - Singoli potenziali aggiunti in Marketo Qualifier.
 
 Per aggiungere potenziali clienti non provenienti dal CRM:
 
@@ -48,7 +50,7 @@ Per aggiungere potenziali clienti non provenienti dal CRM:
 
    * Per un&#39;importazione CSV, carica un file CSV nel formato `firstname,email`.
      È necessario specificare il nome e l’indirizzo e-mail. Il cognome è facoltativo. Il modello CSV non include la colonna ID lead CRM, ma puoi aggiungere la colonna e i relativi valori al file prima dell’importazione. Se l’importazione non riesce, controlla il messaggio di errore per individuare i campi o i valori da correggere, quindi carica di nuovo il file.
-     Mappa qualsiasi campo CSV personalizzato o aggiuntivo, non solo quelli standard. Sales Qualifier salva questi valori in ogni prospect e li rende disponibili in un secondo momento, anche per la [generazione e-mail](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
+     Mappa qualsiasi campo CSV personalizzato o aggiuntivo, non solo quelli standard. Marketo Qualifier salva questi valori in ogni prospect e li rende disponibili in un secondo momento, anche per la [generazione e-mail](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
    * Per aggiungere manualmente una persona, inserisci i relativi dettagli nel modulo.
 
 1. Seleziona **[!UICONTROL Salva]**.
@@ -79,7 +81,7 @@ Per filtrare i potenziali clienti in base alle caratteristiche di marketing:
 
 Ogni prospect mostra la sua ultima attività [!DNL Marketo] insieme alla cronologia recente.
 
-Marketing Highlights è disponibile in tutte le aree geografiche di produzione. Un amministratore completa una configurazione una tantum che connette [!DNL Marketo] a Sales Qualifier. Consulta [Configurare le caratteristiche di marketing](integrations.md#turn-on-marketo-engagement-filtering).
+Marketing Highlights è disponibile in tutte le aree geografiche di produzione. Un amministratore completa una configurazione una tantum che connette [!DNL Marketo] a Marketo Qualifier. Consulta [Configurare le caratteristiche di marketing](integrations.md#turn-on-marketo-engagement-filtering).
 
 ## Rivedi dettagli prospect
 

@@ -1,21 +1,22 @@
 ---
-title: Attività in Sales Qualifier
-description: Scopri come elaborare le attività di estensione manuali e rivedere i potenziali clienti suggeriti dall’agente nella coda delle attività di Sales Qualifier.
+title: Attività in Adobe Marketo Qualifier
+description: Scopri come elaborare le attività manuali di outreach e rivedere i potenziali clienti suggeriti dall’agente nella coda delle attività di Adobe Marketo Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/MbTN1r-ARrW-XYtdIS-KZT7K1Lk-B3GihT8iXL60GrQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f1202dc6d5657875b6cdc35a0116e31cabebf9be
+    internal-label: Insights
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: '907'
 ht-degree: 0%
-
 ---
-
 
 # Attività
 
@@ -44,7 +45,7 @@ Le attività manuali sono associate ai passaggi del flusso di lavoro in uscita e
 
 * **[!UICONTROL LinkedIn InMail]**—Creato quando una cadenza raggiunge un passaggio LinkedInMail. Il pannello di lavoro mostra il contenuto da copiare e inviare da LinkedIn. Espandi **[!UICONTROL Motivo IA]** per rivedere il motivo.
 
-* **[!UICONTROL Revisione e-mail]** - Creata dopo che Sales Qualifier ha generato le e-mail personalizzate di un potenziale cliente. Seleziona **[!UICONTROL Rivedi e-mail]** per rivedere e approvare le bozze prima dell&#39;inizio dell&#39;estensione. Consulta [Rivedere e perfezionare le e-mail generate](outbound-workflows.md#review-and-refine-generated-emails).
+* **[!UICONTROL Revisione e-mail]** - Creata dopo che Adobe Marketo Qualifier ha generato le e-mail personalizzate di un potenziale cliente. Seleziona **[!UICONTROL Rivedi e-mail]** per rivedere e approvare le bozze prima dell&#39;inizio dell&#39;estensione. Consulta [Rivedere e perfezionare le e-mail generate](outbound-workflows.md#review-and-refine-generated-emails).
 
 ![Revisione e-mail](assets/tasks-review.png)
 
