@@ -123,7 +123,7 @@ Il passaggio **[!UICONTROL Impostazioni]** controlla il modo in cui viene esegui
 
 ![Pannello impostazioni](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
-1. Rivedi il nome del flusso di lavoro in uscita **** e modificalo se necessario.
+1. Rivedi il nome del flusso di lavoro in uscita **&#x200B;**&#x200B;e modificalo se necessario.
 1. In **[!UICONTROL Numero massimo di potenziali clienti per flusso di lavoro in uscita]**, confermare il numero massimo di potenziali clienti che il flusso di lavoro in uscita può gestire contemporaneamente.
 1. Imposta la **[!UICONTROL finestra di invio]** per le ore in cui le e-mail in uscita possono essere inviate.
 1. Seleziona i giorni della settimana in cui le e-mail possono essere inviate. Per evitare gli invii di fine settimana, seleziona solo i giorni della settimana invece di utilizzare un&#39;impostazione **[!UICONTROL Ignora fine settimana]** separata.
