@@ -45,7 +45,7 @@ I BDR possono utilizzare il browser e i plug-in e-mail per accedere alle informa
 
 ::::landing-cards-container
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
 
 Introduzione
 
@@ -55,7 +55,7 @@ Completa l’impostazione dell’amministratore una tantum per i gruppi di utent
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
 
 Potenziali clienti
 
@@ -65,7 +65,7 @@ Crea, filtra e controlla l’elenco di potenziali clienti.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
 
 Account
 
@@ -75,7 +75,7 @@ Dai priorità all’estensione con pipeline a livello di account e dati di coinv
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=it)
 
 Flussi di lavoro in uscita
 
@@ -85,7 +85,7 @@ Crea cadenze guidate da obiettivi con e-mail generate dall’intelligenza artifi
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
 
 Attività
 
@@ -95,7 +95,7 @@ Elabora le chiamate telefoniche, LinkedInMail e le attività di revisione e-mail
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
 
 Prestazioni
 
@@ -105,7 +105,7 @@ Verifica le prestazioni di e-mail e prenotazione riunioni.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
 
 Centro conoscenze
 
@@ -115,7 +115,7 @@ Crea un playbook che attinga l’attività di intelligenza artificiale e l’ass
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
 
 Integrazioni
 
@@ -125,7 +125,7 @@ Connetti Salesforce o Microsoft Dynamics 365 e mappa i campi.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=it)
 
 Impostazioni profilo
 
@@ -135,7 +135,7 @@ Configura la disponibilità di e-mail, firma e calendario.
 :::
 
 :::card
-![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icona](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=it)
 
 Chat basata su IA
 
