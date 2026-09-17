@@ -1,46 +1,48 @@
 ---
 title: Impostazioni di amministrazione
-description: Scopri come gestire i campi CRM, la sincronizzazione delle attività, la rinuncia alle e-mail e altre impostazioni di amministrazione di Sales Qualifier.
+description: Scopri come gestire i campi di gestione delle relazioni con i clienti, la sincronizzazione delle attività, la rinuncia alle e-mail e altre impostazioni di amministrazione di Adobe Marketo Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+    internal-label: Integrations
   - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+    internal-label: Administration
+
 internal-label: Administration
-source-git-commit: 527d6a99f1ca51371ab0bc44ee61482bac56fc4f
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 1089
+source-wordcount: '1091'
 ht-degree: 0%
-
 ---
-
 
 # Impostazioni di amministrazione
 
 Utilizza **[!UICONTROL Impostazioni amministratore]** per configurare le integrazioni CRM, gestire il Knowledge Center e configurare la rinuncia e-mail.
 
-Sales Qualifier si connette a Salesforce o Microsoft Dynamics 365. La connessione offre a Account Qualification Agent (AQA) una visualizzazione coerente di lead, account, contatti, attività e proprietari. Sales Qualifier può anche scrivere le attività di outreach e lo stato di rinuncia al CRM e sincronizzare le attività di outreach con Marketo.
+Adobe Marketo Qualifier si connette a Salesforce o Microsoft Dynamics 365. La connessione offre a Account Qualification Agent (AQA) una visualizzazione coerente di lead, account, contatti, attività e proprietari. Marketo Qualifier può anche riscrivere le attività di outreach e lo stato di rinuncia al CRM e sincronizzare le attività di outreach con Marketo.
 
 Per configurare le connessioni CRM, il mapping dei campi e la sincronizzazione delle attività, passare a **[!UICONTROL Amministrazione]** > **[!UICONTROL Impostazioni amministratore]** > **[!UICONTROL Connessioni CRM]**. Gli utenti standard possono utilizzare i dati e i filtri CRM configurati, ma non possono modificare queste impostazioni. Per connettere un CRM per la prima volta, vedere [Introduzione](getting-started.md#connect-your-crm).
 
 >[!IMPORTANT]
 >
->L&#39;accesso a **[!UICONTROL Impostazioni amministratore]** richiede l&#39;appartenenza ai gruppi di utenti `Sales Qualifier` e `Sales Qualifier Admins`.
+>L&#39;accesso a **[!UICONTROL Impostazioni amministratore]** richiede l&#39;appartenenza ai gruppi di utenti `Marketo Qualifier` e `Marketo Qualifier Admins`.
 
 ## MCP CRM e il plug-in incorporato
 
-Sales Qualifier funziona con il tuo sistema di gestione delle relazioni con i clienti nei seguenti modi:
+Marketo Qualifier funziona con il tuo CRM in questi modi:
 
 * **Query MCP CRM**: Account Qualification Agent esegue query sui dati CRM in tempo reale in modo che le risposte e le informazioni riflettano lo stato corrente dei record.
-* **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizza il plug-in per aggiungere un potenziale cliente a Sales Qualifier.
+* **Plug-in incorporato**. Il plug-in CRM visualizza informazioni e dati di agente [!DNL Marketo Sales Insights] (MSI) nel CRM. Utilizza il plug-in per aggiungere un prospect a Marketo Qualifier.
 * **Sincronizzazione attività** - Quando un amministratore attiva **[!UICONTROL Sincronizzazione attività]**, le attività di outreach vengono sincronizzate con CRM e Marketo.
 
 ## Ambito di accesso CRM
 
-Sales Qualifier legge gli utenti, i contatti, le mappature dei proprietari, i lead, gli account, le opportunità e le attività dal CRM. Scrive solo le attività di outreach registrate e lo stato di rinuncia al CRM e sincronizza le attività di outreach con Marketo. L’amministratore del sistema di gestione delle relazioni con i clienti prepara l’accesso API in Salesforce o Dynamics. Un amministratore di Sales Qualifier connette quindi il sistema CRM, mappa i campi in entrata e sceglie se sincronizzare le attività.
+Il qualificatore Marketo legge gli utenti, i contatti, le mappature dei proprietari, i lead, gli account, le opportunità e le attività dal CRM. Scrive solo le attività di outreach registrate e lo stato di rinuncia al CRM e sincronizza le attività di outreach con Marketo. L’amministratore del sistema di gestione delle relazioni con i clienti prepara l’accesso API in Salesforce o Dynamics. Un amministratore di Marketo Qualifier connette quindi il CRM, esegue il mapping dei campi in entrata e sceglie se sincronizzare le attività.
 
 >[!NOTE]
 >
@@ -48,7 +50,7 @@ Sales Qualifier legge gli utenti, i contatti, le mappature dei proprietari, i le
 
 ## Mappa campi CRM (mappatura in entrata)
 
-Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. La mappatura in entrata controlla quali campi di gestione delle relazioni con i clienti vengono estratti da Sales Qualifier nell’applicazione.
+Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessione e aprire **[!UICONTROL Mappatura in entrata]**. La mappatura in entrata controlla quali campi CRM richiama Marketo Qualifier nell’applicazione.
 
 1. Selezionare **[!UICONTROL Aggiungi sezione]**.
 1. Immettere un nome e una descrizione per la sezione.
@@ -60,7 +62,7 @@ Dopo aver connesso il CRM, selezionare **[!UICONTROL Gestisci]** per la connessi
 1. Attiva **[!UICONTROL Filterable]** per ogni campo prospect, contatto o opportunità che desideri rendere disponibile come filtro nell&#39;elenco **[!UICONTROL Prospect]**.
 1. Visualizzare l&#39;anteprima della sezione e selezionare **[!UICONTROL Aggiungi]**.
 
-I campi mappati vengono visualizzati nelle aree corrispondenti di Sales Qualifier:
+I campi mappati vengono visualizzati nelle aree corrispondenti di Marketo Qualifier:
 
 * I campi prospect vengono visualizzati nella scheda **[!UICONTROL Persona]**.
 * I campi Account vengono visualizzati nella scheda **[!UICONTROL Account]**.
@@ -70,13 +72,13 @@ I campi mappati vengono visualizzati nelle aree corrispondenti di Sales Qualifie
 
 1. Da **[!UICONTROL connessioni CRM]**, selezionare **[!UICONTROL Gestisci]** per il CRM connesso.
 1. Apri **[!UICONTROL Mappatura in uscita]**.
-1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare nuovamente le attività di Sales Qualifier Outreach con CRM e Marketo.
+1. Attiva **[!UICONTROL Sincronizzazione attività]** per sincronizzare le attività di reindirizzamento del qualificatore Marketo con CRM e Marketo.
 
-Quando la sincronizzazione delle attività è disattivata, Sales Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di distribuzione con il tuo CRM o Marketo.
+Quando la sincronizzazione delle attività è disattivata, Marketo Qualifier continua a utilizzare i dati CRM in entrata ma non sincronizza le attività di outreach con il tuo CRM o Marketo.
 
 ## Configurare le regole di sincronizzazione CRM
 
-Sales Qualifier può riscrivere automaticamente gli aggiornamenti dello stato del lead in Salesforce e Microsoft Dynamics quando un potenziale cliente si sposta attraverso un flusso di lavoro in uscita, in modo che i rappresentanti non aggiornino più manualmente il sistema CRM.
+Marketo Qualifier può riscrivere automaticamente gli aggiornamenti dello stato del lead in Salesforce e Microsoft Dynamics quando un potenziale cliente si sposta attraverso un flusso di lavoro in uscita, in modo che i rappresentanti non aggiornino più manualmente il CRM.
 
 ### Funzionamento delle regole di sincronizzazione CRM
 
@@ -104,13 +106,13 @@ Con le regole di sincronizzazione CRM configurate, i team di vendita visualizzan
 
 ## Crea un playbook per un Knowledge Center {#knowledge-center}
 
-Il **[!UICONTROL Centro conoscenze]** consente al Account Qualification Agent (AQA) di accedere ai materiali di vendita. Sales Qualifier utilizza questi materiali per generare ricerche, approfondimenti sulle qualifiche e attività di sensibilizzazione che riflettono il modo in cui l’organizzazione vende. Solo gli amministratori possono creare e gestire la playbook.
+Il **[!UICONTROL Centro conoscenze]** consente al Account Qualification Agent (AQA) di accedere ai materiali di vendita. Marketo Qualifier utilizza questi materiali per generare ricerche, approfondimenti sulle qualifiche e campagne informative che riflettono il modo in cui l’organizzazione vende. Solo gli amministratori possono creare e gestire la playbook.
 
 ![Centro conoscenze](assets/knowledge-center.png){width="800" zoomable="yes"}
 
 1. Nel menu di navigazione a sinistra, espandi **[!UICONTROL Amministrazione]**, seleziona **[!UICONTROL Impostazioni amministratore]** e seleziona **[!UICONTROL Centro informazioni]**
 1. u
-1. Imposta **[!UICONTROL Nome società]** e **[!UICONTROL URL società]** utilizzati da Sales Qualifier per eseguire ricerche nella società e bozze di e-mail.
+1. Imposta **[!UICONTROL Nome società]** e **[!UICONTROL URL società]** utilizzati da Marketo Qualifier per eseguire ricerche nell&#39;azienda e nella bozza di e-mail.
 1. Carica giochi di vendita, profili cliente ideali (ICP), guide di posizionamento e altro materiale promozionale in formato PDF, PPTX o DOCX.
 1. Seleziona **[!UICONTROL Genera playbook]**.
 
@@ -136,7 +138,7 @@ In entrambi i casi, il contenuto generato riflette i messaggi nel playbook anzic
 
 Le impostazioni vengono salvate automaticamente.
 
-Quando un prospect seleziona il collegamento, Sales Qualifier interrompe l’invio di e-mail al prospect e sincronizza lo stato di rinuncia al CRM connesso.
+Quando un prospect seleziona il collegamento, Marketo Qualifier smette di inviare e-mail a tale prospect e sincronizza lo stato di rinuncia al CRM connesso.
 
 ## Riferimento: parametri API di esempio
 

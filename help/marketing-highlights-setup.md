@@ -1,24 +1,28 @@
 ---
 title: Impostare gli elementi di rilievo del marketing
-description: Scopri come collegare Marketo a Sales Qualifier in modo che i rappresentanti possano visualizzare e filtrare i potenziali clienti in base alle attività live di Marketo in Dati salienti sul marketing.
+description: Scopri come collegare Marketo ad Adobe Marketo Qualifier in modo che i rappresentanti possano visualizzare e filtrare i potenziali clienti in base alle attività live di Marketo in Dati salienti sul marketing.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+    internal-label: Integrations
   - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+    internal-label: Administration
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 17bfe0a1ce9b289ed85af0f72ddd089b11cca875
+    internal-label: Insights
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 675
+source-wordcount: '677'
 ht-degree: 3%
-
 ---
-
 
 # Configurare gli elementi di rilievo del marketing
 
@@ -31,7 +35,7 @@ Marketing Highlights mostra l&#39;attività live [!DNL Marketo] di ogni potenzia
 La configurazione è costituita da quattro parti:
 
 * Parte A: creare le credenziali API in Adobe Developer Console.
-* Parte B: raccogliere l’endpoint Sales Qualifier e i relativi identificatori.
+* Parte B: raccogli l’endpoint e gli identificatori di Adobe Marketo Qualifier.
 * Parte C: configurare un webhook in [!DNL Marketo Engage].
 * Parte D: aggiungi il webhook a un trigger Smart Campaign.
 
@@ -39,19 +43,19 @@ Al termine dell&#39;installazione, gli utenti visualizzano e filtrano questa att
 
 ## Parte A: Creare le credenziali API {#part-a-create-api-credentials}
 
-Queste credenziali consentono a [!DNL Marketo] di eseguire l&#39;autenticazione in modo sicuro in Sales Qualifier.
+Queste credenziali consentono a [!DNL Marketo] di eseguire l&#39;autenticazione in modo sicuro in Marketo Qualifier.
 
 Per creare le credenziali:
 
 1. Vai a [Adobe Developer Console](https://developer.adobe.com/console/) e accedi con il tuo Adobe ID.
 1. Seleziona **[!UICONTROL Crea nuovo progetto]** o apri un progetto esistente.
-1. Seleziona **[!UICONTROL Modifica progetto]**, rinomina il progetto in un elemento identificabile, ad esempio `Sales Qualifier Marketing Highlights`, quindi seleziona **[!UICONTROL Salva]**.
+1. Seleziona **[!UICONTROL Modifica progetto]**, rinomina il progetto in un elemento identificabile, ad esempio `Marketo Qualifier Marketing Highlights`, quindi seleziona **[!UICONTROL Salva]**.
 1. Seleziona **[!UICONTROL Aggiungi API]**, seleziona **[!UICONTROL API Experience Platform]**, quindi seleziona **[!UICONTROL Avanti]**.
 1. Scegli **[!UICONTROL OAuth Server-to-Server]** come tipo di autenticazione, quindi seleziona **[!UICONTROL Next]**.
 
-   **[!UICONTROL Server-to-Server OAuth]** consente a [!DNL Marketo] di chiamare l&#39;API Sales Qualifier direttamente dal server, senza richiedere a una persona di accedere.
+   **[!UICONTROL OAuth Server-to-Server]** consente a [!DNL Marketo] di chiamare l&#39;API qualificatore di Marketo direttamente dal proprio server, senza richiedere a una persona di accedere.
 
-1. Immettere un nome di credenziali di almeno 45 caratteri, ad esempio `Sales Qualifier Marketing Highlights Creds`.
+1. Immettere un nome di credenziali di almeno 45 caratteri, ad esempio `Marketo Qualifier Marketing Highlights Creds`.
 1. Selezionare il profilo prodotto da associare, quindi selezionare **[!UICONTROL Salva API configurata]**.
 1. In **[!UICONTROL Credenziali connesse]**, apri le credenziali **[!UICONTROL OAuth Server-to-Server]**. Seleziona **[!UICONTROL Recupera segreto client]**, quindi copia **[!UICONTROL ID client]** e **[!UICONTROL Segreto client]**. Questi valori vengono utilizzati nella [Parte C](#part-c-configure-the-marketo-webhook).
 
@@ -63,9 +67,9 @@ Per creare le credenziali:
 
 Sono necessari tre valori per [Parte C](#part-c-configure-the-marketo-webhook):
 
-* **URL endpoint**: l&#39;indirizzo del webhook Sales Qualifier della tua area geografica.
+* **URL endpoint**: l&#39;indirizzo del webhook del qualificatore Marketo per l&#39;area geografica.
 * **imsOrg ID** - Identificatore dell&#39;organizzazione nel sistema Adobe Identity Management (IMS), nel formato `{ORG_ID}@AdobeOrg`.
-* **Nome sandbox** - Il nome della sandbox AEP esattamente come appare nell&#39;URL di Sales Qualifier (il valore `sname`), non il nome visualizzato nell&#39;interfaccia utente. Utilizzare il valore URL minuscolo, ad esempio `prod`, non `Prod`.
+* **Nome sandbox** - Il nome della sandbox AEP esattamente come appare nell&#39;URL del qualificatore Marketo (il valore `sname`), non il nome visualizzato nell&#39;interfaccia utente. Utilizzare il valore URL minuscolo, ad esempio `prod`, non `Prod`.
 
 | Area geografica | URL endpoint webhook |
 | --- | --- |
@@ -166,7 +170,7 @@ Per creare il webhook:
 
 ## Parte D: Aggiungere il webhook a un trigger Smart Campaign {#part-d-add-the-webhook-to-a-trigger-smart-campaign}
 
-Aggiungi un passaggio di flusso **[!UICONTROL Chiama webhook]** a un trigger di Smart Campaign, esistente o nuovo. I trigger dell’elenco avanzato per tale campagna determinano le attività da inviare a Sales Qualifier.
+Aggiungi un passaggio di flusso **[!UICONTROL Chiama webhook]** a un trigger di Smart Campaign, esistente o nuovo. I trigger dell’elenco avanzato per tale campagna decidono quali attività vengono inviate a Marketo Qualifier.
 
 Per aggiungere il webhook:
 
@@ -175,7 +179,7 @@ Per aggiungere il webhook:
 1. Nella scheda **[!UICONTROL Flusso]**, aggiungi un passaggio **[!UICONTROL Chiama webhook]** e seleziona il webhook creato in [Parte C](#part-c-configure-the-marketo-webhook).
 1. Attiva la campagna avanzata.
 
-L’attività di tale campagna avanzata ora scorre in Sales Qualifier. I rappresentanti visualizzano e filtrano questa attività per **[!UICONTROL Potenziali]** > **[!UICONTROL Elementi di rilievo marketing]**.
+L’attività di tale campagna avanzata ora scorre in Marketo Qualifier. I rappresentanti visualizzano e filtrano questa attività per **[!UICONTROL Potenziali]** > **[!UICONTROL Elementi di rilievo marketing]**.
 
 >[!MORELIKETHIS]
 >

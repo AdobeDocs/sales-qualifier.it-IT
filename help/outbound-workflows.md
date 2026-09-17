@@ -1,25 +1,29 @@
 ---
 title: Creare e gestire flussi di lavoro in uscita
-description: Scopri come creare, condividere, rivedere e gestire flussi di lavoro in uscita generati dall’intelligenza artificiale in Sales Qualifier per eseguire cadenze di sensibilizzazione basate su obiettivi.
+description: Scopri come creare, condividere, rivedere e gestire flussi di lavoro in uscita generati dall’intelligenza artificiale in Adobe Marketo Qualifier per eseguire cadenze di estensione basate su obiettivi.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+    internal-label: Integrations
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 527d6a99f1ca51371ab0bc44ee61482bac56fc4f
+    internal-label: Insights
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 2062
+source-wordcount: '2064'
 ht-degree: 0%
-
 ---
-
 
 # Flussi di lavoro in uscita
 
@@ -155,7 +159,7 @@ Le e-mail possono anche essere generate nel linguaggio del potenziale cliente, c
 
 ## Rivedere e perfezionare le e-mail generate
 
-Al termine della generazione, nella vista dei dettagli Flusso di lavoro in uscita viene richiesto di esaminare le bozze. Sales Qualifier invia l’e-mail solo dopo l’approvazione.
+Al termine della generazione, nella vista dei dettagli Flusso di lavoro in uscita viene richiesto di esaminare le bozze. Adobe Marketo Qualifier non invia e-mail fino all’approvazione.
 
 1. Nella visualizzazione dei dettagli del flusso di lavoro in uscita, selezionare **[!UICONTROL Rivedi bozze]** nel banner.
 1. Il passaggio **[!UICONTROL Rivedi punti di contatto]** ha due schede:
@@ -234,10 +238,10 @@ Nella [Posta in uscita](email-outbox.md) sono elencate le e-mail automatizzate i
 
 ## Prenotazione riunione
 
-Quando connetti il calendario, Sales Qualifier genera un collegamento di prenotazione personale che i potenziali clienti possono utilizzare per pianificare con te il tempo.
+Quando connetti il calendario, Marketo Qualifier genera un collegamento di prenotazione personale che i potenziali clienti possono utilizzare per pianificare con te il tempo.
 
 * **Collegamenti prenotazione** - Configura la connessione al calendario e la disponibilità in [Impostazioni profilo](profile-settings.md). Aggiungi il collegamento di prenotazione alla firma e-mail in modo che venga visualizzato nelle e-mail in uscita.
-* **Inserimento cadenza** - Sales Qualifier inserisce il collegamento di prenotazione nei punti rilevanti di una cadenza. Potete modificarne la posizione.
+* **Inserimento cadenza**: Marketo Qualifier inserisce il collegamento di prenotazione nei punti rilevanti di una cadenza. Potete modificarne la posizione.
 * **Pausa prenotazione** - Quando un prospect registra una riunione, **[!UICONTROL Pausa prenotazione riunione]** interrompe ulteriori follow-up. Vedere [Passaggio 4: Configurare le impostazioni del flusso di lavoro in uscita](#step-4-configure-outbound-workflow-settings).
 
 Tieni traccia degli esiti della prenotazione nella pagina [Prestazioni in uscita](performance.md).

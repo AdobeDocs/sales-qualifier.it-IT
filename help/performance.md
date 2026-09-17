@@ -1,20 +1,20 @@
 ---
-title: Prestazioni in uscita in Sales Qualifier
-description: Scopri come rivedere i rapporti Prestazioni organizzazione e Prestazioni campagna in Sales Qualifier per tenere traccia delle attività e dei risultati in uscita.
+title: Prestazioni in uscita in Adobe Marketo Qualifier
+description: Scopri come rivedere i rapporti sulle prestazioni dell’organizzazione e sulle prestazioni delle campagne in Adobe Marketo Qualifier per tenere traccia delle attività e dei risultati in uscita.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/ofBw7JHKkkQaPOeUZ6rreLDAhAfineLveBeVYK-CerQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-source-git-commit: 527d6a99f1ca51371ab0bc44ee61482bac56fc4f
+    internal-label: CX Enterprise
+Outbound Workflows    internal-label: Insights
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 401
+source-wordcount: '404'
 ht-degree: 0%
-
 ---
 
-
-# Prestazioni in uscita in Sales Qualifier
+# Prestazioni in uscita in Adobe Marketo Qualifier
 
 Nel menu di navigazione a sinistra, seleziona **[!UICONTROL Prestazioni in uscita]** per tenere traccia dell&#39;attività in uscita e dei risultati nel tuo team. Il dashboard include due visualizzazioni: **[!UICONTROL Prestazioni organizzazione]** e **[!UICONTROL Prestazioni campagna]**.
 
@@ -48,7 +48,7 @@ La scheda **[!UICONTROL E-mail]** riporta il volume e l&#39;efficacia delle e-ma
 * **Grafico dell&#39;andamento settimanale delle e-mail**: attività e-mail per settimana.
 * Tabella delle prestazioni delle e-mail per rappresentante.
 
-Sales Qualifier assegna stati separati alle risposte e ai messaggi non recapitati fuori sede in modo da poterli distinguere dal coinvolgimento del potenziale cliente.
+Marketo Qualifier assegna stati separati alle risposte e ai messaggi non recapitati fuori sede in modo da poterli distinguere dal coinvolgimento del potenziale cliente.
 
 ### Scheda Attività
 

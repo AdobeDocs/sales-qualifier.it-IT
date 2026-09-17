@@ -1,28 +1,30 @@
 ---
 title: Utilizzare la chat basata su IA
-description: Scopri come utilizzare la chat di IA in Sales Qualifier per ricercare account, redigere proposte e ottenere risposte in base ai tuoi dati di gestione delle relazioni con i clienti, coinvolgimento e Knowledge Center.
+description: Scopri come utilizzare la chat di IA in Adobe Marketo Qualifier per ricercare account, redigere proposte e ottenere risposte in base ai tuoi dati di gestione delle relazioni con i clienti, coinvolgimento e Knowledge Center.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/LHCHAk0rsNwLsKFhKMlHaLL7xkkCEAKFNDMEonb2TdQ'
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-source-git-commit: c7f4e1b7adc4b3420ea5f16c3b426c40bb300d45
+    internal-label: Artificial intelligence
+source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
 workflow-type: tm+mt
-source-wordcount: 725
+source-wordcount: '727'
 ht-degree: 1%
-
 ---
-
 
 # Chat basata su IA
 
-AI Chat risponde a domande in linguaggio naturale in base al contesto di vendita. Utilizzala per ricercare un account, prepararti per una chiamata, redigere una bozza di sensibilizzazione e assegnare una priorità al tuo lavoro senza uscire da Sales Qualifier.
+AI Chat risponde a domande in linguaggio naturale in base al contesto di vendita. Utilizzala per ricercare un account, prepararti per una chiamata, redigere una bozza di sensibilizzazione e assegnare una priorità al tuo lavoro senza uscire da Adobe Marketo Qualifier.
 
 ![Pulsante Chat AI](assets/ai-chat.png){width="800" zoomable="yes"}
 
@@ -56,7 +58,7 @@ Utilizza la chat basata su IA per i seguenti tipi di attività:
 
 ## Chiedi ai chat tra i dati connessi
 
-La chat basata su IA può rispondere a domande su Sales Qualifier, CRM, [!DNL Marketo], [!DNL Adobe Journey Optimizer B2B Edition] e dati di intelligence dell&#39;azienda. Poni una domanda in un linguaggio semplice per cercare informazioni o richiamare il contesto. La chat di IA legge e genera rapporti sui tuoi dati; non crea, modifica o avvia nulla.
+La chat basata su IA può rispondere a domande relative al qualificatore Marketo, al sistema CRM, a [!DNL Marketo], a [!DNL Adobe Journey Optimizer B2B Edition] e ai dati di intelligence dell&#39;azienda. Poni una domanda in un linguaggio semplice per cercare informazioni o richiamare il contesto. La chat di IA legge e genera rapporti sui tuoi dati; non crea, modifica o avvia nulla.
 
 Di seguito sono riportati alcuni esempi di prompt. Più si è specifici nel prompt, più i risultati saranno mirati.
 
